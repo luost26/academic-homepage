@@ -1,0 +1,41 @@
+{% assign authors = include.authors %}
+{% assign has_eq_contrib = false %}
+{% assign i = 0 %}
+{% for _key in authors %}
+    {% assign last_char = _key | slice: -1, 1%}
+    {% if last_char == "*" %}
+        {% assign key = _key | split: "*" | first %}
+        {% assign mark = "*" %}
+        {% assign has_eq_contrib = true %}
+    {% else %}
+        {% assign key = _key %}
+        {% assign mark = "" %}
+    {% endif %}
+
+    {% assign info = site.data.authors[key] %}
+
+    {% if info['name'] %}
+        {% assign name = info['name'] %}
+    {% else %}
+        {% assign name = key %}
+    {% endif %}
+
+    {% if info['bold'] == true %}
+        {% assign display_name = name | append: mark | prepend: "<strong>" | append: "</strong>" %}
+    {% else %}
+        {% assign display_name = name | append: mark %}
+    {% endif %}
+    
+    {% if info['url'] %}
+        <a class="text-body" target="_blank" href="{{ info['url'] }}">{{ display_name }}</a>{% if forloop.index < authors.size %},{% endif %}
+    {% else %}
+        <span class="text-body">
+            {{ display_name }}{% if forloop.index < authors.size %},{% endif %}
+        </span>
+    {% endif %}
+
+{% endfor %}
+
+{% if has_eq_contrib == true %}
+<mark>(* <i> equal contribution</i>)</mark>
+{% endif %}

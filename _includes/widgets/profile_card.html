@@ -1,0 +1,104 @@
+<div class="row">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-5">
+                <div class="row">
+                    <div class="col">
+                        <p class="h1 font-weight-normal">{{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small></p>
+                        <p class="text-profile-position">
+                            {% for position in site.data.profile.positions %}
+                            {{ position }}<br/>
+                            {% endfor %}
+                            {% if site.data.profile.cv_link %}
+                            <a target="_blank" href="{{ site.data.profile.cv_link }}"><i class="fas fa-file-alt"></i> [Curriculum Vitae]</a> <br/>
+                            {% endif %}
+                        </p>
+                        <p class="text-profile-bio">
+                            {{ site.data.profile.short_bio }}
+                        </p>
+                    </div>
+                    {% if site.data.profile.show_portrait %}
+                    <div class="col-md-auto d-none d-md-block">
+                        <figure class="figure">
+                            <img 
+                                src="{{ site.data.profile.portrait_url }}" 
+                                class="figure-img img-fluid img-thumbnail" 
+                                style="height: 200px;"
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                title="{{ site.data.profile.portrait_caption }}"
+                            >
+                            <figcaption class="figure-caption text-right"></figcaption>
+                        </figure>
+                    </div>
+                    {% endif %}
+        
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col">
+                        <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}">
+                            <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
+                        </a>
+
+                        {% if site.data.profile.gscholar %}
+                        <a class="pr-3 no-break" target="_blank" href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}&hl=en">
+                            <i class="fab fa-google"></i> Google Scholar
+                        </a>
+                        {% endif %}
+                        
+                        {% if site.data.profile.github %}
+                        <a class="pr-3 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        {% endif %}
+
+                        {% if site.data.profile.wechat_qrcode %}
+                        <a class="pr-3 no-break" data-toggle="modal" data-target="#modal-wechat">
+                            <i class="fab fa-weixin"></i> WeChat
+                        </a>
+                        {% endif %}
+
+                        {% if site.data.profile.twitter %}
+                        <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        {% endif %}
+
+                        {% if site.data.profile.linkedin %}
+                        <a class="pr-3 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        {% endif %}
+
+                        {% if site.data.profile.orcid %}
+                        <a class="pr-3 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
+                            <i class="fab fa-orcid"></i> ORCID
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+
+{% if site.data.profile.wechat_qrcode %}
+<div class="modal fade" id="modal-wechat" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="{{ site.data.profile.wechat_qrcode }}" class="img-fluid">
+            </div>
+            {% if site.data.profile.wechat_prompt %}
+            <div class="modal-body p-1">
+                {{ site.data.profile.wechat_prompt }}
+            </div>
+            {% endif %}
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

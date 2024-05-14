@@ -1,0 +1,45 @@
+primary_name: "Your Name"
+secondary_name: ""
+navbar_name: "Your Name"
+
+positions:
+  - '<span class="no-break"><img src="assets/images/badges/PKU_red.png" alt="Peking University" class="inline-badge"/></span> B.S., Peking University (2021)'
+
+email: "your@email.com"
+gscholar: your_google_scholar_id
+github: your_github_id
+twitter: your_twitter_id
+# wechat_qrcode: assets/images/etc/wechat.jpg
+# wechat_prompt: >-
+#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
+# linkedin: your-linked-in-id
+# orcid: 0000-0000-0000-0000
+
+short_bio: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+
+show_portrait: true
+portrait_url: assets/images/photos/portrait.jpg
+portrait_caption: >-
+  Photo by Manja Vitolic on Unsplash.
+
+education:
+- name: Peking University
+  logo: assets/images/badges/PKU_red.png
+  position: B.S. in Computer Science
+  date: Sep. 2017 - Jul. 2021
+
+# experience:
+# - name: Peking University
+#   logo: assets/images/badges/PKU_red.png
+#   position: Research Intern
+#   date: Sep. 2019 - Jul. 2021
+
+
+awards:
+- name: Award Name 2
+  date: 2024
+- name: Award Name 1 
+  date: 2021

@@ -1,0 +1,48 @@
+{% assign item = include.item %}
+<div class="d-none d-md-block">
+    <div class="row no-gutters border-bottom border-gray">
+        <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
+            <img src="{{ item.cover }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm">
+        </div>
+        <div class="col-md-9 col-xl-10 p-3 pl-md-0">
+            <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
+            <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
+            <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
+            <p class="mt-0 mb-0 small text-muted">{{ item.abstract }}</p>
+            
+            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
+                {% for link in item.links %}
+                {% if link[1].url %}
+                <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
+                {% else %}
+                <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
+                {% endif %}
+                {% endfor %}
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0" style="overflow-y: scroll;">
+    <img src="{{ item.cover }}" alt="{{ item.title }}" class="card-img w-100">
+    <div class="card-img-overlay d-flex align-items-start flex-column" style="background-color: rgba(255, 255, 255, 0.85);">
+        <div class="mb-auto"></div>
+        <div>
+            <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
+            <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
+            <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
+            <p class="mt-0 mb-0 small text-muted d-none d-sm-block">{{ item.abstract }}</p>
+            
+            <p class="small pb-0 mb-0 lh-125 text-muted abstract-links">
+                {% for link in item.links %}
+                {% if link[1].url %}
+                <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
+                {% else %}
+                <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
+                {% endif %}
+                {% endfor %}
+            </p>
+        </div>
+    </div>
+</div>
