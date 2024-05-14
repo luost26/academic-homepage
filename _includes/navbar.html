@@ -8,8 +8,8 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 {% for item in site.data.navigation.pages %}
-                <li class="nav-item {% if item.url == page.url %}active{% endif %}">
-                    <a class="nav-link" href="{{ item.url }}">{{ item.title }}
+                <li class="nav-item {% if item.name == page.navbar_name %}active{% endif %}">
+                    <a class="nav-link" href="{{ item.url }}">{{ item.name }}
                         {% if item.url == page.url %}<span class="sr-only">(current)</span>{% endif %}
                     </a>
                 </li>
