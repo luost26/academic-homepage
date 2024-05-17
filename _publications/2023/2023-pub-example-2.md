@@ -5,7 +5,7 @@ selected:       false
 pub:            "International Conference on Learning Representations (ICLR)"
 pub_date:       "2023"
 abstract: >-
-  Viverra nibh cras pulvinar mattis nunc sed. Quam quisque id diam vel quam elementum pulvinar etiam. Ac felis donec et odio pellentesque. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. A pellentesque sit amet porttitor eget. Magna fermentum iaculis eu non diam phasellus vestibulum lorem sed.
+  Photo by Dessy Dimcheva on Unsplash. Viverra nibh cras pulvinar mattis nunc sed. Quam quisque id diam vel quam elementum pulvinar etiam. Ac felis donec et odio pellentesque. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. A pellentesque sit amet porttitor eget. Magna fermentum iaculis eu non diam phasellus vestibulum lorem sed.
 
 cover:          assets/images/covers/cover2.jpg
 authors:
@@ -17,5 +17,5 @@ authors:
 links:
   Paper: https://www.biorxiv.org
   Code: https://github.com
-  OpenReview: https://openreview.net
+  Unsplash: https://unsplash.com/photos/orange-fruit-on-white-table-cloth-ISX_imp8t1o
 ---
