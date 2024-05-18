@@ -19,10 +19,6 @@ gem "jekyll", "~> 3.9"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed"
-  gem "emoji_for_jekyll"
-  gem "jekyll-admin"
-  gem "jekyll-tidy"
   gem "jekyll-email-protect"
 end
 

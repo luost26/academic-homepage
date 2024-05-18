@@ -19,8 +19,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
-  - jekyll-tidy
   - jekyll-email-protect
 
 # Exclude from processing.
@@ -35,10 +33,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-timezone: Asia/Shanghai
+# timezone: Asia/Shanghai
 
 collections:
   - publications
-
-jekyll_tidy:
-  compress_html: true
