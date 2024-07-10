@@ -1,10 +1,14 @@
 {% assign item = include.item %}
 <div class="d-none d-md-block">
     <div class="row no-gutters border-bottom border-gray">
+        {%- if item.cover -%}
         <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
             <img data-src="{{ item.cover }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm" src="assets/images/empty_300x200.png">
         </div>
         <div class="col-md-9 col-xl-10 p-3 pl-md-0">
+        {%- else -%}
+        <div class="col p-3 ml-md-2">
+        {%- endif -%}
             <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
             <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
             <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
@@ -25,7 +29,11 @@
 </div>
 
 <div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0" style="overflow-y: scroll;">
+    {%- if item.cover -%}
     <img data-src="{{ item.cover }}" alt="{{ item.title }}" class="lazy card-img w-100" src="assets/images/empty_300x200.png">
+    {%- else -%}
+    <img alt="{{ item.title }}" class="w-100 rounded-sm" src="assets/images/empty_300x200.png">
+    {%- endif -%}
     <div class="card-img-overlay d-flex align-items-start flex-column" style="background-color: rgba(255, 255, 255, 0.85);">
         <div class="mb-auto"></div>
         <div>
