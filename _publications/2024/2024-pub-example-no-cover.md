@@ -2,7 +2,7 @@
 title:          Semper auctor neque vitae rutrum quisque non tellus orci ac
 date:           2024-01-12 00:01:00 +0800
 selected:       false
-pub:            "International Conference on Learning Representations (ICML)"
+pub:            "International Conference on Learning Representations (ICLR)"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
 # pub_last:       ' <span class="badge badge-pill badge-custom badge-success">Spotlight</span>'
