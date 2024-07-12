@@ -6,6 +6,7 @@ positions:
   - '<span class="no-break"><img src="assets/images/badges/PKU_red.png" alt="Peking University" class="inline-badge"/></span> B.S., Peking University (2021)'
 
 email: "your@email.com"
+# cv_link: link-to-your-cv-file
 gscholar: your_google_scholar_id
 github: your_github_id
 twitter: your_twitter_id

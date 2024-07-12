@@ -9,13 +9,13 @@
                             {% for position in site.data.profile.positions %}
                             {{ position }}<br/>
                             {% endfor %}
-                            {% if site.data.profile.cv_link %}
-                            <a target="_blank" href="{{ site.data.profile.cv_link }}"><i class="fas fa-file-alt"></i> [Curriculum Vitae]</a> <br/>
-                            {% endif %}
                         </p>
                         <p class="text-profile-bio">
                             {{ site.data.profile.short_bio }}
                         </p>
+                        {% if site.data.profile.cv_link %}
+                            <a target="_blank" href="{{ site.data.profile.cv_link }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
+                        {% endif %}
                     </div>
                     {% if site.data.profile.show_portrait %}
                     <div class="col-md-auto d-none d-md-block">
