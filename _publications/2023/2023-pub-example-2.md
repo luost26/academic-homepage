@@ -9,11 +9,11 @@ abstract: >-
 
 cover:          assets/images/covers/cover2.jpg
 authors:
-  - Charles Green (MIT)
-  - Your Name
-  - John Doe
+  - Charles Green (MIT)*
+  - John Doe*
   - Robert White
   - James Wang
+  - Your Name#
 links:
   Paper: https://www.biorxiv.org
   Code: https://github.com
