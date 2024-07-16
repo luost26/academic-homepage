@@ -5,7 +5,7 @@ selected:       false
 pub:            "International Conference on Learning Representations (ICLR)"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
-# pub_last:       ' <span class="badge badge-pill badge-custom badge-success">Spotlight</span>'
+# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 pub_date:       "2023"
 
 abstract: >-
