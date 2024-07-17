@@ -14,7 +14,7 @@
 </div>
 
 <script>
-striped_pathname = location.pathname.replace(/\/$/, "");
+striped_pathname = location.pathname.replace(/\/+$/, "");
 if(striped_pathname != "{{ site.baseurl }}"){
     document.getElementById("url-debug-message").classList.remove('d-none');
 }
