@@ -3,8 +3,8 @@
         <div class="alert alert-warning my-0" role="alert">
             <h5><i class="fas fa-exclamation-triangle"></i> Action required</h5>
             <strong>Problem:</strong>
-            The current root path of this site is <code class="root-path-text"></code>,
-            which does not match the <code>baseurl</code> (<code>{{ site.baseurl }}</code>) configured in <code>_config.yml</code>.
+            The current root path of this site is "<code class="root-path-text"></code>",
+            which does not match the <code>baseurl</code> ("<code>{{ site.baseurl }}</code>") configured in <code>_config.yml</code>.
             <br>
 
             <strong>Solution:</strong>
@@ -14,10 +14,11 @@
 </div>
 
 <script>
-if(location.pathname != "{{ site.baseurl }}"){
+striped_pathname = location.pathname.replace(/\/$/, "");
+if(striped_pathname != "{{ site.baseurl }}"){
     document.getElementById("url-debug-message").classList.remove('d-none');
 }
 document.querySelectorAll(".root-path-text").forEach(function(element){
-    element.textContent = location.pathname;
+    element.textContent = striped_pathname;
 });
 </script>
