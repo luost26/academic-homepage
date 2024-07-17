@@ -3,7 +3,7 @@
     <div class="row no-gutters border-bottom border-gray">
         {%- if item.cover -%}
         <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
-            <img data-src="{{ item.cover }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm" src="assets/images/empty_300x200.png">
+            <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
         </div>
         <div class="col-md-9 col-xl-10 p-3 pl-md-0">
         {%- else -%}
@@ -30,9 +30,9 @@
 
 <div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0" style="overflow-y: scroll;">
     {%- if item.cover -%}
-    <img data-src="{{ item.cover }}" alt="{{ item.title }}" class="lazy card-img w-100" src="assets/images/empty_300x200.png">
+    <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy card-img w-100" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
     {%- else -%}
-    <img alt="{{ item.title }}" class="w-100 rounded-sm" src="assets/images/empty_300x200.png">
+    <img alt="{{ item.title }}" class="w-100 rounded-sm" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
     {%- endif -%}
     <div class="card-img-overlay d-flex align-items-start flex-column" style="background-color: rgba(255, 255, 255, 0.85);">
         <div class="mb-auto"></div>

@@ -10,7 +10,7 @@ pub_date:       "2023"
 
 abstract: >-
   Massa ultricies mi quis hendrerit dolor magna. Arcu non odio euismod lacinia at quis risus sed. Et tortor at risus viverra. Enim neque volutpat ac tincidunt. Dictum varius duis at consectetur lorem donec.
-# cover:          assets/images/covers/cover3.jpg
+# cover:          /assets/images/covers/cover3.jpg
 authors:
   - Your Name
   - James Wang

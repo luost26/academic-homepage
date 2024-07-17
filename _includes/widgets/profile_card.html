@@ -7,7 +7,10 @@
                         <p class="h1 font-weight-normal">{{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small></p>
                         <p class="text-profile-position">
                             {% for position in site.data.profile.positions %}
-                            {{ position }}<br/>
+                            {% if position.logo -%}
+                            <img src="{{ position.logo | relative_url }}" alt="Logo" class="inline-badge"/>
+                            {%- endif %}
+                            {{ position.name }}<br/>
                             {% endfor %}
                         </p>
                         <p class="text-profile-bio">
@@ -21,7 +24,7 @@
                     <div class="col-md-auto d-none d-md-block">
                         <figure class="figure">
                             <img 
-                                src="{{ site.data.profile.portrait_url }}" 
+                                src="{{ site.data.profile.portrait_url | relative_url }}" 
                                 class="figure-img img-fluid img-thumbnail" 
                                 style="height: 200px;"
                                 data-toggle="tooltip" 

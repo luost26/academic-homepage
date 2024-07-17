@@ -11,7 +11,7 @@
                             <ul class="list-unstyled mb-1">
                                 {% for item in site.data.profile.education %}
                                 <li class="media mb-1">
-                                    <img src="{{ item.logo }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
+                                    <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
                                     <div class="media-body">
                                         <p class="my-0">{{ item.name }}</p>
                                         <p class="small my-0">{{ item.dept }}</p>
@@ -45,7 +45,7 @@
                             <ul class="list-unstyled mb-1">
                                 {% for item in site.data.profile.experience %}
                                 <li class="media mb-1">
-                                    <img src="{{ item.logo }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
+                                    <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
                                     <div class="media-body">
                                         <p class="my-0">{{ item.name }}</p>
                                         <p class="small my-0">{{ item.dept }}</p>
