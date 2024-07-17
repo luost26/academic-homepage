@@ -9,9 +9,9 @@
             <div class="mr-3 text-muted my-1">{{ year.name }}</div>
             <div class="media-body">
                 {% for item in year.items %}
-                <div class="my-1">
-                    {{ item.title }}
-                    <div class="float-right text-muted"><i>{{ item.date | date: "%b %d" }}</i></div>
+                <div class="my-1 d-flex">
+                    <div>{{ item.title }}</div>
+                    <div class="ml-auto mt-auto text-muted no-break"><i>{{ item.date | date: "%b %d" }}</i></div>
                 </div>
                 {% endfor %}
             </div>
