@@ -34,4 +34,4 @@ A GitHub Pages (Jekyll) template for personal academic website. Click [here](htt
    bundle exec jekyll serve
    ```
 
-5. Browse to `http://localhost:4000/` to see the website.
+5. Browse to the displayed URL to see the website.
