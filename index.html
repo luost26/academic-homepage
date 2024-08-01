@@ -2,7 +2,6 @@
 layout: default
 title : Homepage
 navbar_title: Home
-num_selected: 10
 ---
 {% include widgets/profile_card.html %}
 
@@ -23,7 +22,7 @@ num_selected: 10
 {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
 {% 
     include widgets/publication_card.html 
-    publications=pubs limit=page.num_selected 
+    publications=pubs
     title='<i class="fas fa-star"></i> Selected Publications'
 %}
 {% endif %}
