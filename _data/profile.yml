@@ -3,7 +3,7 @@ secondary_name: ""
 navbar_name: "Your Name"
 
 positions:
-- logo: /assets/images/badges/PKU_red.png  # Logo is optional
+- logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
   name: Position 1 with logo
 - name: Position 2 without logo
 
@@ -33,10 +33,10 @@ portrait_caption: >-
   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2017 - Jul. 2021
+- name: Massachusetts Institute of Technology
+  logo: /assets/images/badges/MIT_Social_circle.png
+  position: Ph.D. Student in Computer Science
+  date: Sep. 2024 - present
 
 # experience:
 # - name: Peking University
