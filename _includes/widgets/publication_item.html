@@ -1,14 +1,14 @@
 {% assign item = include.item %}
 <div class="d-none d-md-block">
     <div class="row no-gutters border-bottom border-gray">
-        {%- if item.cover -%}
         <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
+            {%- if item.cover -%}
             <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+            {%- else -%}
+            <img data-src="https://avatar.vercel.sh/{{ item.id | slugify }}?size=600" alt="{{ item.title }}" class="lazy w-100 rounded-sm" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" style="aspect-ratio: 3 / 2; opacity: 0.6;">
+            {%- endif -%}
         </div>
         <div class="col-md-9 col-xl-10 p-3 pl-md-0">
-        {%- else -%}
-        <div class="col p-3 ml-md-2">
-        {%- endif -%}
             <h5 class="mt-0 mb-1 font-weight-normal">{{ item.title }}</h5>
             <p class="mt-0 mb-0 small">{% include widgets/author_list.html authors=item.authors %}</p>
             <p class="mt-0 mb-0 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
