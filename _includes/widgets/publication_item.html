@@ -5,7 +5,7 @@
             {%- if item.cover -%}
             <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
             {%- else -%}
-            <img data-src="https://avatar.vercel.sh/{{ item.id | slugify }}?size=600" alt="{{ item.title }}" class="lazy w-100 rounded-sm" src="{{ '/assets/images/empty_300x200.png' | relative_url }}" style="aspect-ratio: 3 / 2; opacity: 0.6;">
+            <svg class="bubble-visual-hash lazy w-100 rounded-sm" data-bubble-visual-hash="{{ item.id }}" viewBox="0 0 300 200"></svg>
             {%- endif -%}
         </div>
         <div class="col-md-9 col-xl-10 p-3 pl-md-0">
@@ -32,7 +32,7 @@
     {%- if item.cover -%}
     <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy card-img w-100" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
     {%- else -%}
-    <img alt="{{ item.title }}" class="w-100 rounded-sm" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+    <svg class="bubble-visual-hash lazy w-100 rounded-sm" data-bubble-visual-hash="{{ item.id }}" viewBox="0 0 300 200"></svg>
     {%- endif -%}
     <div class="card-img-overlay d-flex align-items-start flex-column" style="background-color: rgba(255, 255, 255, 0.85);">
         <div class="mb-auto"></div>
