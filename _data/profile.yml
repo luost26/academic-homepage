@@ -25,9 +25,9 @@ short_bio: >-
     working with big datasets and developing machine/deep learning frameworks in the field of brain-computer interfaces. He aspires
     to use those skills to advance the interface of human and artificial intelligence.
   </p>
-  <p>
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-  </p>
+  # <p>
+  #   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+  # </p>
 
 portrait_url: /assets/images/photos/gment_pic_2.jpg
 # portrait_caption: >-
