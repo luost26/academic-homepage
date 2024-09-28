@@ -71,7 +71,7 @@ createBubbleInfo = function (hashGroup, n, w, h) {
             "#2ca02c", "#98df8a",  // green
             "#d62728", "#ff9896",  // red
             "#9467bd", "#c5b0d5",  // purple
-            // "#8c564b", "#c49c94",  // brown
+            "#8c564b", "#c49c94",  // brown
             // "#e377c2", "#f7b6d2",  // pink
             // "#7f7f7f", "#c7c7c7",  // gray
             "#bcbd22", "#dbdb8d",  // yellow
