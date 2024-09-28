@@ -17,7 +17,7 @@ gscholar: VLjdOlUAAAAJ
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
 linkedin: georgios-mentzelopoulos-aa284411b
-orcid: 0000-0001-5596-7559
+# orcid: 0000-0001-5596-7559
 
 short_bio: >-
   <p>
@@ -29,7 +29,7 @@ short_bio: >-
     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
   </p>
 
-portrait_url: /assets/images/photos/gment_pic.jpg
+portrait_url: /assets/images/photos/gment_pic_2.jpg
 # portrait_caption: >-
 #   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
