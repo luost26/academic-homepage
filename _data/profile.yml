@@ -36,20 +36,20 @@ portrait_url: /assets/images/photos/gment_pic.jpg
 education:
 - name: University of Pennsylvania
   logo: /assets/images/badges/University-of-Pennsylvania-Emblem.png
-  position: Bioengineering, PhD
+  position: Bioengineering PhD & Robotics MSE
   date: Sep. 2020 - present
-- name: University of Pennsylvania
-  logo: /assets/images/badges/University-of-Pennsylvania-Emblem.png
-  position: Robotics, MSE
-  date: Dec. 2023
+# - name: University of Pennsylvania
+#   logo: /assets/images/badges/University-of-Pennsylvania-Emblem.png
+#   position: Robotics, MSE
+#   date: Dec. 2023
 - name: University of Michigan
   logo: /assets/images/badges/umich_logo.png
-  position: Electrical Engineering, BSE
+  position: Electrical Engineering BSE & Biomedical Engineering BSE
   date: Sep. 2016 - Jun. 2020
-- name: University of Michigan
-  logo: /assets/images/badges/umich_logo.png
-  position: Biomedical Engineering, BSE
-  date: Sep. 2016 - Jun. 2020
+# - name: University of Michigan
+#   logo: /assets/images/badges/umich_logo.png
+#   position: Biomedical Engineering, BSE
+#   date: Sep. 2016 - Jun. 2020
 
 # experience:
 # - name: Peking University
