@@ -63,13 +63,19 @@ createBubbleInfo = function (hashGroup, n, w, h) {
     var wh = w < h ? w : h;
     var scaleX = function (v) { return (w / 16) * v; };
     var scaleY = function (v) { return (h / 16) * v; };
-    var radius = function (v) { var min = 5; var max = wh / 2; return min + ((v / 16) * (max - min)); };
+    var radius = function (v) { var min = 10; var max = wh / 2; return min + ((v / 16) * (max - min)); };
     var color = function (i) {
         var c = [
-            "#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c",
-            "#98df8a", "#d62728", "#ff9896", "#9467bd", "#c5b0d5",
-            "#8c564b", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f",
-            "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5"
+            "#1f77b4", "#aec7e8",  // blue
+            "#ff7f0e", "#ffbb78",  // orange
+            "#2ca02c", "#98df8a",  // green
+            "#d62728", "#ff9896",  // red
+            "#9467bd", "#c5b0d5",  // purple
+            // "#8c564b", "#c49c94",  // brown
+            // "#e377c2", "#f7b6d2",  // pink
+            // "#7f7f7f", "#c7c7c7",  // gray
+            "#bcbd22", "#dbdb8d",  // yellow
+            "#17becf", "#9edae5",  // cyan
         ];
         return c[i % c.length];
     };
