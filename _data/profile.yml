@@ -1,42 +1,55 @@
 primary_name: "Georgios Mentzelopoulos"
-secondary_name: "George"
-navbar_name: "Your Name"
+secondary_name: ""
+navbar_name: "Georgios Mentzelopoulos"
 
 positions:
-- logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
-  name: Position 1 with logo
-- name: Position 2 without logo
+- logo: /assets/images/badges/University-of-Pennsylvania-Emblem.png  # Logo is optional
+  name: PhD Student @ University of Pennsylvania
+# - name: Position 2 without logo
 
 
-email: "your@email.com"
+email: "gment@upenn.edu"
 # cv_link: link-to-your-cv-file
-gscholar: your_google_scholar_id
-github: your_github_id
-twitter: your_twitter_id
+gscholar: VLjdOlUAAAAJ
+# github: your_github_id
+# twitter: your_twitter_id
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
-# linkedin: your-linked-in-id
-# orcid: 0000-0000-0000-0000
+linkedin: georgios-mentzelopoulos-aa284411b
+orcid: 0000-0001-5596-7559
 
 short_bio: >-
   <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Georgios (George) is a highly motivated professional interested in solving multidisciplinary challenges. He has experience
+    working with big datasets and developing machine/deep learning frameworks in the field of brain-computer interfaces. He aspires
+    to use those skills to advance the interface of human and artificial intelligence.
   </p>
   <p>
     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
   </p>
 
-portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+portrait_url: /assets/images/photos/gment_pic.jpg
+# portrait_caption: >-
+#   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
-  position: Ph.D. Student in Computer Science
-  date: Sep. 2024 - present
+- name: University of Pennsylvania
+  logo: /assets/images/badges/University-of-Pennsylvania-Emblem.png
+  position: Bioengineering, PhD
+  date: Sep. 2020 - present
+- name: University of Pennsylvania
+  logo: /assets/images/badges/University-of-Pennsylvania-Emblem.png
+  position: Robotics, MSE
+  date: Dec. 2023
+- name: University of Michigan
+  logo: /assets/images/badges/umich_logo.png
+  position: Electrical Engineering, BSE
+  date: Sep. 2016 - Jun. 2020
+- name: University of Michigan
+  logo: /assets/images/badges/umich_logo.png
+  position: Biomedical Engineering, BSE
+  date: Sep. 2016 - Jun. 2020
 
 # experience:
 # - name: Peking University
@@ -46,9 +59,9 @@ education:
 
 
 awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+- name: Onassis Foundation Graduate Student Scholarship ($36K)
+  date: 2022-2025
+- name: A. G. Leventis Foundation Graduate Student Scholarship ($36K)
+  date: 2022-2025
+# - name: A quick brown fox jumps over the lazy dog and runs away award
+#   date: 2021
