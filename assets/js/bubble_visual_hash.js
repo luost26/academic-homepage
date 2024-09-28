@@ -96,6 +96,10 @@ createBubbleInfo = function (hashGroup, n, w, h) {
 
 
 drawBubble = function (svg, bubbleInfo) {
+    //  Sort bubbles by radius in descending order
+    bubbleInfo.sort(function (a, b) {
+        return b.radius - a.radius;
+    });
     for (var i = 0; i < bubbleInfo.length; i++) {
         var bubble = bubbleInfo[i];
         var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
