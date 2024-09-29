@@ -1,7 +1,7 @@
 ---
 show: true
-width: 6
-date: 2024-09-12 00:01:00 +0800
+width: 4
+date: 2018-09-12 00:01:00 +0800
 ---
 
 <!--
@@ -15,7 +15,7 @@ Otherwise, if there are multiple carousels on the same page, they will not work.
     <div class="carousel-inner" style="height: 300px;">
         <div class="carousel-item active">
             <div class="d-block rounded-sm" style="height: 300px; overflow: hidden">
-                <img data-src="https://picsum.photos/seed/first1/800/600" class="lazy d-block w-100" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+                <img data-src="https://picsum.photos/seed/first111/800/800" class="lazy d-block w-100" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
             </div>
             <div class="carousel-caption d-none d-md-block">
                 <h5>Photo Collection</h5>
@@ -24,12 +24,12 @@ Otherwise, if there are multiple carousels on the same page, they will not work.
         </div>
         <div class="carousel-item">
             <div class="d-block rounded-sm" style="height: 300px; overflow: hidden">
-                <img data-src="https://picsum.photos/seed/second2/600" class="lazy d-block w-100" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+                <img data-src="https://picsum.photos/seed/second2/800" class="lazy d-block w-100" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
             </div>
         </div>
         <div class="carousel-item">
             <div class="d-block rounded-sm" style="height: 300px; overflow: hidden">
-                <img data-src="https://picsum.photos/seed/third3/600" class="lazy d-block w-100" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+                <img data-src="https://picsum.photos/seed/third33/800" class="lazy d-block w-100" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
             </div>
         </div>
     </div>
