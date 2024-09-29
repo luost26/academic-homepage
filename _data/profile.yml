@@ -51,11 +51,11 @@ education:
 #   position: Biomedical Engineering, BSE
 #   date: Sep. 2016 - Jun. 2020
 
-# experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+- name: Neuralink
+  logo: /assets/images/badges/neuralink_logo.png
+  position: Data Science Intern
+  date: June. 2022 - Nov. 2022
 
 
 awards:
