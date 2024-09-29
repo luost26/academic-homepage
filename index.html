@@ -8,21 +8,21 @@ navbar_title: Home
 {% include widgets/url_debug_message.html %}
 
 {% if site.data.display.homepage.show_experience %}
-{% include widgets/experience_card.html %}
+    {% include widgets/experience_card.html %}
 {% endif %}
 
 {% if site.data.display.homepage.show_news %}
-{% assign count_news = site.news | size %}
-{% if count_news > 0 %}
-{% include widgets/news_card.html %}
-{% endif %}
+    {% assign count_news = site.news | size %}
+    {% if count_news > 0 %}
+        {% include widgets/news_card.html limit=site.data.display.homepage.num_news %}
+    {% endif %}
 {% endif %}
 
 {% if site.data.display.homepage.show_selected_publications %}
-{% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-{% 
-    include widgets/publication_card.html 
-    publications=pubs
-    title='<i class="fas fa-star"></i> Selected Publications'
-%}
+    {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
+    {% 
+        include widgets/publication_card.html 
+        publications=pubs
+        title='<i class="fas fa-star"></i> Selected Publications'
+    %}
 {% endif %}
