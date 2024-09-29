@@ -9,7 +9,7 @@ pub:            "International Conference on Learning Representations (ICLR)"
 pub_date:       "2023"
 
 abstract: >-
-  Massa ultricies mi quis hendrerit dolor magna. Arcu non odio euismod lacinia at quis risus sed. Et tortor at risus viverra. Enim neque volutpat ac tincidunt. Dictum varius duis at consectetur lorem donec.
+  When the cover image is not provided, it will generate a random colorful bubble images as the cover image using the <code>bubble_visual_hash.js</code> script.
 # cover:          /assets/images/covers/cover3.jpg
 authors:
   - Your Name
@@ -17,6 +17,6 @@ authors:
   - Some Other Name
   - John Doe
 links:
-  Code: https://github.com/luost26/academic-homepage
-  Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
+  Code: https://github.com/luost26/bubble-visual-hash
+  Demo: https://luost26.github.io/bubble-visual-hash
 ---
