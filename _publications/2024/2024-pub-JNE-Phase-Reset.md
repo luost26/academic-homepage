@@ -22,7 +22,7 @@ authors:
   - Flavia Vitale
   - John Medaglia
 links:
-  Full Text: https://iopscience.iop.org/article/10.1088/1741-2552/ad7f87/meta
+  Paper: https://iopscience.iop.org/article/10.1088/1741-2552/ad7f87/meta
   # Code: https://github.com/luost26/academic-homepage
   # Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
 ---
