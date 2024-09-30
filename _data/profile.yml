@@ -36,20 +36,13 @@ portrait_url: /assets/images/photos/gment_pic_2.jpg
 education:
 - name: University of Pennsylvania
   logo: /assets/images/badges/upenn_logo.jpg
-  position: Bioengineering PhD &#x231B; </p> Robotics MSE &#x1F393;
+  position: PhD Bioengineering &#x231B; <br> MSE Robotics &#x1F393;
   date: Sep. 2020 - present
-# - name: University of Pennsylvania
-#   logo: /assets/images/badges/University-of-Pennsylvania-Emblem.png
-#   position: Robotics, MSE
-#   date: Dec. 2023
 - name: University of Michigan
   logo: /assets/images/badges/umich_logo.png
-  position: Electrical Engineering BSE &#x1F393; </p> Biomedical Engineering BSE &#x1F393;
+  position: BSE Electrical Engineering &#x1F393; <br> BSE Biomedical Engineering &#x1F393;
   date: Sep. 2016 - Jun. 2020
-# - name: University of Michigan
-#   logo: /assets/images/badges/umich_logo.png
-#   position: Biomedical Engineering, BSE
-#   date: Sep. 2016 - Jun. 2020
+
 
 experience:
 - name: Neuralink
