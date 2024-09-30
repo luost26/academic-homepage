@@ -1,6 +1,17 @@
 // aHR0cHM6Ly9naXRodWIuY29tL2x1b3N0MjYvYWNhZGVtaWMtaG9tZXBhZ2U=
 $(function () {
-    $('.lazy').Lazy({
+    $('img.lazy').Lazy({
+        scrollDirection: 'vertical',
+        effect: 'fadeIn',
+        effectTime: 300,
+        visibleOnly: true,
+        placeholder: "",
+        onError: function(element) {
+            console.log('[lazyload] Error loading ' + element.data('src'));
+        },
+    })
+
+    $('div.lazy').Lazy({
         scrollDirection: 'vertical',
         effect: 'fadeIn',
         effectTime: 300,
@@ -9,7 +20,12 @@ $(function () {
         onError: function(element) {
             console.log('[lazyload] Error loading ' + element.data('src'));
         },
+        afterLoad: function(element) {
+            // set the style to background-size: cover; 
+            element.css('background-size', 'cover');
+        },
     })
+
     $('[data-toggle="tooltip"]').tooltip()
 
     var $grid = $('.grid').masonry({
