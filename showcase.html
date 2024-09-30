@@ -4,11 +4,13 @@ title : Showcase
 navbar_title: Showcase
 ---
 
-{% assign cards = site.showcase | sort: "date" | reverse | where: "show", true %}
+{% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
 
-<div class="row grid">
+{% for group in cards_by_group %}
+<h1>{{ group.name }}</h1>
+<div class="row grid mb-4">
     <div class="grid-sizer col-1"></div>
-    {% for item in cards %}
+    {% for item in group.items %}
     <div class="p-2 grid-item col-md-{{ item.width }} col-sm-{{ item.width | times: 2 | at_most: 12 }} col-{{ item.width | times: 3 | at_most: 12 }}">
         <div class="card border-0 shadow-sm bg-white">
             {{ item.content }}
@@ -16,3 +18,4 @@ navbar_title: Showcase
     </div>
     {% endfor %}
 </div>
+{% endfor %}

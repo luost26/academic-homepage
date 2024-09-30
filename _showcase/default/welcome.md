@@ -1,6 +1,6 @@
 ---
 show: true
-width: 6
+width: 8
 date: 2024-01-12 00:01:00 +0800
 ---
 
