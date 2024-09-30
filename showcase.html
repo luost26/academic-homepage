@@ -9,7 +9,7 @@ navbar_title: Showcase
 <div class="row grid">
     <div class="grid-sizer col-1"></div>
     {% for item in cards %}
-    <div class="p-2 grid-item col-md-{{ item.width }} col-sm-{{ item.width | times: 2 | at_most: 12 }} col-{{ item.width | times: 3 | at_most: 12 }}">
+    <div class="p-2 grid-item col-md-{{ item.width }} col-sm-{{ item.width | times: 1.5 | round | at_most: 12 }} col-{{ item.width | times: 3 | at_most: 12 }}">
         <div class="card border-0 shadow-sm bg-white">
             {{ item.content }}
         </div>
