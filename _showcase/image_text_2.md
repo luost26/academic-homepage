@@ -3,7 +3,7 @@ show: true
 width: 4
 date: 2020-01-12 00:01:00 +0800
 ---
-<div class="card">
+<div>
   <img data-src="https://api.star-history.com/svg?repos=luost26/academic-homepage&type=Date)](https://star-history.com/#luost26/academic-homepage&Date" class="lazy w-100" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
   <div class="card-body">
     <h5 class="card-title">GitHub Star History</h5>
