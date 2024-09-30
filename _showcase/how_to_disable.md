@@ -1,6 +1,6 @@
 ---
 show: true
-width: 4
+width: 2
 date: 2019-01-12 00:01:00 +0800
 ---
 
