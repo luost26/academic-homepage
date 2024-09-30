@@ -33,35 +33,35 @@ portrait_url: /assets/images/photos/gment_pic_2.jpg
 # portrait_caption: >-
 #   Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
-education:
-- name: University of Pennsylvania
-  logo: /assets/images/badges/upenn_logo.jpg
-  position: Bioengineering PhD & Robotics MSE
-  date: Sep. 2020 - present
+# education:
 # - name: University of Pennsylvania
-#   logo: /assets/images/badges/University-of-Pennsylvania-Emblem.png
-#   position: Robotics, MSE
-#   date: Dec. 2023
-- name: University of Michigan
-  logo: /assets/images/badges/umich_logo.png
-  position: Electrical Engineering BSE & Biomedical Engineering BSE
-  date: Sep. 2016 - Jun. 2020
+#   logo: /assets/images/badges/upenn_logo.jpg
+#   position: Bioengineering PhD & Robotics MSE
+#   date: Sep. 2020 - present
+# # - name: University of Pennsylvania
+# #   logo: /assets/images/badges/University-of-Pennsylvania-Emblem.png
+# #   position: Robotics, MSE
+# #   date: Dec. 2023
 # - name: University of Michigan
 #   logo: /assets/images/badges/umich_logo.png
-#   position: Biomedical Engineering, BSE
+#   position: Electrical Engineering BSE & Biomedical Engineering BSE
 #   date: Sep. 2016 - Jun. 2020
+# # - name: University of Michigan
+# #   logo: /assets/images/badges/umich_logo.png
+# #   position: Biomedical Engineering, BSE
+# #   date: Sep. 2016 - Jun. 2020
 
-experience:
-- name: Neuralink
-  logo: /assets/images/badges/neuralink_logo.png
-  position: Data Science Intern
-  date: June. 2022 - Nov. 2022
+# experience:
+# - name: Neuralink
+#   logo: /assets/images/badges/neuralink_logo.png
+#   position: Data Science Intern
+#   date: June. 2022 - Nov. 2022
 
 
-awards:
-- name: Onassis Foundation Graduate Student Scholarship ($36K)
-  date: 2022-2025
-- name: A. G. Leventis Foundation Graduate Student Scholarship ($36K)
-  date: 2022-2025
-# - name: A quick brown fox jumps over the lazy dog and runs away award
-#   date: 2021
+# awards:
+# - name: Onassis Foundation Graduate Student Scholarship ($36K)
+#   date: 2022-2025
+# - name: A. G. Leventis Foundation Graduate Student Scholarship ($36K)
+#   date: 2022-2025
+# # - name: A quick brown fox jumps over the lazy dog and runs away award
+# #   date: 2021
