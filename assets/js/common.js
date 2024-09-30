@@ -9,6 +9,10 @@ $(function () {
         onError: function(element) {
             console.log('[lazyload] Error loading ' + element.data('src'));
         },
+        afterLoad: function(element) {
+            // remove background-image style
+            element.css('background-image', 'none');
+        }
     })
 
     $('div.lazy').Lazy({
