@@ -1,0 +1,41 @@
+---
+title:          "MXene-infused bioelectronic interfaces for multiscale 
+electrophysiology and stimulation"
+date:           2021-09-22 00:01:00 +0800
+selected:       true
+pub:            "Science Translational Medicine"
+# pub_pre:        "Submitted to "
+# pub_post:       'Under review.'
+# pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
+pub_date:       "2021"
+
+# abstract: >-
+#  Photo by Pineapple Supply Co. on Unsplash. Massa ultricies mi quis hendrerit dolor magna. Arcu non odio euismod lacinia at quis risus sed. Et tortor at risus viverra. Enim neque volutpat ac tincidunt. Dictum varius duis at consectetur lorem donec.
+cover:          /assets/images/covers/eeg_tms_1.jpg
+authors:
+  - Nicolette Driscoll
+  - Brian Erickson
+  - Brendan B. Murphy
+  - Andrew G. Richardson
+  - Gregory Robbins
+  - Nicholas V. Apollo
+  - Georgios Mentzelopoulos
+  - Tyler Mathis
+  - Kanit Hantanasirisakul
+  - Puneet Bagga
+  - Sarah E. Gullbrand
+  - Matthew Sergison
+  - Ravinder Reddy
+  - John A. Wolf
+  - H. Isaac Chen
+  - Timothy H. Lucas
+  - Timothy R. Dillingham
+  - Kathryn A. Davis
+  - Yury Gogotsi
+  - John D. Medaglia
+  - Flavia Vitale
+links:
+  Paper: https://www.science.org/doi/full/10.1126/scitranslmed.abf8629
+  # Code: https://github.com/luost26/academic-homepage
+  # Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
+---
