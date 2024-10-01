@@ -17,23 +17,20 @@
                         </div>
                         {% endif %}
 
-                        <span class="h1 font-weight-normal">
+                        <div class="h1 font-weight-normal">
                             {{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small>
-                        </span>
-                        <div class="my-2"></div>
-                        <span class="text-profile-position">
+                        </div>
+                        <div class="text-profile-position">
                             {% for position in site.data.profile.positions %}
                             {% if position.logo -%}
                             <img src="{{ position.logo | relative_url }}" alt="Logo" class="inline-badge"/>
                             {%- endif %}
                             {{ position.name }}<br/>
                             {% endfor %}
-                        </span>
-                        <div class="my-3"></div>
-                        <span class="text-profile-bio mt-3" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
+                        </div>
+                        <div class="text-profile-bio mt-3" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
                             {{ site.data.profile.short_bio }}
-                        </span>
-                        <div class="my-1"></div>
+                        </div>
                         {% if site.data.profile.cv_link %}
                             <a target="_blank" href="{{ site.data.profile.cv_link }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
                         {% endif %}
