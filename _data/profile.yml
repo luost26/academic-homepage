@@ -19,6 +19,7 @@ twitter: your_twitter_id
 # linkedin: your-linked-in-id
 # orcid: 0000-0000-0000-0000
 
+short_bio_text_justify: false
 short_bio: >-
   <p>
     A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
