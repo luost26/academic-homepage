@@ -15,7 +15,7 @@ body_attr: >-
         <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
             {% for item in year.items %}
-                {% include widgets/publication_item.html item=item %}
+                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
             {% endfor %}
         </div>
         {% endfor %}

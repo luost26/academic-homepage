@@ -1,6 +1,6 @@
 {% assign item = include.item %}
 <div class="d-none d-md-block">
-    <div class="row no-gutters border-bottom border-gray">
+    <div class="row no-gutters {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray">
         <div class="col-md-3 col-xl-2 mb-md-0 p-md-3">
             {%- if item.cover -%}
             <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy w-100 rounded-sm" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
@@ -28,7 +28,7 @@
     </div>
 </div>
 
-<div class="card w-100 d-md-none border-top-0 border-right-0 border-left-0 rounded-0 {% if item.cover %}lazy{% endif %}" data-src="{{ item.cover | relative_url }}" style="background-color: rgba(255,255,255,0.85); background-blend-mode: lighten;">
+<div class="row no-gutters d-md-none {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray {% if include.first %}rounded-top{% endif %} {% if include.last %}rounded-bottom{% endif %} {% if item.cover %}lazy{% endif %}" data-src="{{ item.cover | relative_url }}" style="background-color: rgba(255,255,255,0.85); background-blend-mode: lighten;">
     <div class="d-flex align-items-start flex-column py-3 px-4">
         <div class="mb-auto"></div>
         <div>
