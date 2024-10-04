@@ -15,6 +15,7 @@ $(function () {
             } else if (element.is('div')) {
                 // set the style to background-size: cover; 
                 element.css('background-size', 'cover');
+                element.css('background-position', 'center');
             }
         }
     }
