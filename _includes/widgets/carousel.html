@@ -9,7 +9,7 @@
             {% for item in include.images %}
             <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}">
                 {% if item.link %}<a href="{{ item.link }}" target="_blank">{% endif %}
-                <div class="lazy d-block rounded-sm" data-src="{{ item.src }}" style="height: {{ include.height }};">
+                <div class="lazy always-load d-block rounded-sm" data-src="{{ item.src }}" style="height: {{ include.height }};">
                 </div>
                 <div class="carousel-caption d-none d-md-block">
                     <h5>{{ item.title }}</h5>

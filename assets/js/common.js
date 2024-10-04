@@ -1,34 +1,26 @@
 // aHR0cHM6Ly9naXRodWIuY29tL2x1b3N0MjYvYWNhZGVtaWMtaG9tZXBhZ2U=
 $(function () {
-    $('img.lazy').Lazy({
+    lazyLoadOptions = {
         scrollDirection: 'vertical',
         effect: 'fadeIn',
         effectTime: 300,
-        visibleOnly: true,
         placeholder: "",
         onError: function(element) {
             console.log('[lazyload] Error loading ' + element.data('src'));
         },
         afterLoad: function(element) {
-            // remove background-image style
-            element.css('background-image', 'none');
+            if (element.is('img')) {
+                // remove background-image style
+                element.css('background-image', 'none');
+            } else if (element.is('div')) {
+                // set the style to background-size: cover; 
+                element.css('background-size', 'cover');
+            }
         }
-    })
+    }
 
-    $('div.lazy').Lazy({
-        scrollDirection: 'vertical',
-        effect: 'fadeIn',
-        effectTime: 300,
-        visibleOnly: false,
-        placeholder: "",
-        onError: function(element) {
-            console.log('[lazyload] Error loading ' + element.data('src'));
-        },
-        afterLoad: function(element) {
-            // set the style to background-size: cover; 
-            element.css('background-size', 'cover');
-        },
-    })
+    $('img.lazy, div.lazy:not(.always-load)').Lazy({visibleOnly: true, ...lazyLoadOptions});
+    $('div.lazy.always-load').Lazy({visibleOnly: false, ...lazyLoadOptions});
 
     $('[data-toggle="tooltip"]').tooltip()
 
