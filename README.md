@@ -22,6 +22,7 @@ A GitHub Pages (Jekyll) template for personal academic website. Click [here](htt
 [:star:](https://wby24.github.io/)
 [:star:](https://pengfeixu.com/)
 [:star:](https://boqiuphd.github.io/)
+[:star:](https://www.huabing.li/)
 
 :hugs: Feel free to tell us if you are using this template for your website by creating an issue [here](https://github.com/luost26/academic-homepage/issues/new?assignees=&labels=&projects=&template=user-report.md&title=I+am+using+this+template%21).
 
