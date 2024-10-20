@@ -13,6 +13,18 @@
     </div>
 </div>
 
+<div id="ghpages-domain-debug-message" class="row mt-3 d-none">
+    <div class="col">
+        <div class="alert alert-warning my-0" role="alert">
+            <h5><i class="fas fa-exclamation-triangle"></i> Warning</h5>
+            <strong>Problem:</strong>
+            The name of your GitHub Pages repository ("<code class="repo-name-text"></code>") does not match your GitHub username.
+            <br>
+            <strong>Solution:</strong> Please consider renaming the repository to "<code class="domain-name-text"></code>".
+        </div>
+    </div>
+</div>
+
 <script>
 striped_pathname = location.pathname.replace(/\/+$/, "");
 if(striped_pathname != "{{ site.baseurl }}"){
@@ -21,4 +33,15 @@ if(striped_pathname != "{{ site.baseurl }}"){
 document.querySelectorAll(".root-path-text").forEach(function(element){
     element.textContent = striped_pathname;
 });
+document.querySelectorAll(".repo-name-text").forEach(function(element){
+    element.textContent = striped_pathname.replace("/", "");
+});
+document.querySelectorAll(".domain-name-text").forEach(function(element){
+    element.textContent = location.hostname;
+});
+
+if (striped_pathname.search("github.io") != -1){
+    document.getElementById("ghpages-domain-debug-message").classList.remove('d-none');
+}
+
 </script>
