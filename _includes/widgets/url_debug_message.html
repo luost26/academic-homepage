@@ -21,6 +21,7 @@
             The name of your GitHub Pages repository ("<code class="repo-name-text"></code>") does not match your GitHub username.
             <br>
             <strong>Solution:</strong> Please consider renaming the repository to "<code class="domain-name-text"></code>".
+            If the current repository name is intended, you can ignore this message by removing {% raw %}"<code>{% include widgets/url_debug_message.html %}</code>"{% endraw %} in <code>index.html</code>.
         </div>
     </div>
 </div>
@@ -40,7 +41,7 @@ document.querySelectorAll(".domain-name-text").forEach(function(element){
     element.textContent = location.hostname;
 });
 
-if (striped_pathname.search("github.io") != -1){
+if (striped_pathname.search("github.io") != -1 && location.hostname.search("github.io") != -1){
     document.getElementById("ghpages-domain-debug-message").classList.remove('d-none');
 }
 
