@@ -41,7 +41,7 @@ document.querySelectorAll(".domain-name-text").forEach(function(element){
     element.textContent = location.hostname;
 });
 
-if (striped_pathname.search("github.io") != -1){
+if (striped_pathname.search("github.io") != -1 && striped_pathname != ""){
     document.getElementById("ghpages-domain-debug-message").classList.remove('d-none');
 }
 
