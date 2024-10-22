@@ -5,7 +5,8 @@ navbar_title: Home
 ---
 {% include widgets/profile_card.html %}
 
-{% include widgets/url_debug_message.html %}
+{% include widgets/debug_url.html %}
+{% include widgets/debug_repo_name.html %}
 
 {% if site.data.display.homepage.show_experience %}
     {% include widgets/experience_card.html %}
