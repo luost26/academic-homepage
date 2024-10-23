@@ -17,8 +17,18 @@
                         </div>
                         {% endif %}
 
-                        <div class="h1 font-weight-normal">
-                            {{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small>
+                        <div class="d-flex">
+                            {% if site.data.profile.portrait_url %}
+                            <!-- When the screen is smaller than md, place the portrait below the text -->
+                            <div class="h1 font-weight-normal">
+                                {{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small>
+                            </div>
+                            {% endif %}
+                            <div class="ml-auto d-md-none">
+                                <a target="_blank" href="{{ site.data.profile.portrait_url | relative_url }}">
+                                    <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="height: 48px;">
+                                </a>
+                            </div>
                         </div>
                         <div class="text-profile-position">
                             {% for position in site.data.profile.positions %}
@@ -35,19 +45,6 @@
                             <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
                         {% endif %}
                     </div>
-
-                    {% if site.data.profile.portrait_url %}
-                    <!-- When the screen is smaller than md, place the portrait below the text -->
-                    <div class="figure col-md-auto d-md-none">
-                        <img 
-                            src="{{ site.data.profile.portrait_url | relative_url }}" 
-                            class="figure-img img-fluid img-thumbnail" 
-                            style="height: 200px;"
-                            data-toggle="tooltip" 
-                            data-placement="top" 
-                            title="{{ site.data.profile.portrait_caption }}">
-                    </div>
-                    {% endif %}
         
                 </div>
                 <hr />
