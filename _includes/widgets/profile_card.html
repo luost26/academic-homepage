@@ -54,7 +54,12 @@
                         </a>
 
                         {% if site.data.profile.gscholar %}
-                        <a class="pr-3 no-break" target="_blank" href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}&hl=en">
+                        {%- if site.data.profile.gscholar contains 'scholar.google' -%}
+                        {%- assign gscholar_url = site.data.profile.gscholar -%}
+                        {%- else -%}
+                        {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
+                        {%- endif -%}
+                        <a class="pr-3 no-break" target="_blank" href="{{ gscholar_url }}">
                             <i class="fab fa-google-scholar"></i> Google Scholar
                         </a>
                         {% endif %}
