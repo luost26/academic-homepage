@@ -11,12 +11,16 @@ navbar_title: Showcase
 <div class="row grid mb-4">
     <div class="grid-sizer col-1"></div>
     {% for item in group.items %}
-    {% assign width_sm = item.width | times: 2 | at_most: 12 %}
-    {% if width_sm > 6 %}{% assign width_sm = 12 %}{% endif %}
-
-    {% assign width_xs = item.width | times: 3 | at_most: 12 %}
-    {% if width_xs > 6 %}{% assign width_xs = 12 %}{% endif %}
-
+    {% if item.width >= 4 -%}
+        {%- assign width_sm = 12 -%}
+        {%- assign width_xs = 12 -%}
+    {%- elsif item.width >= 2 -%}
+        {%- assign width_sm = 6 -%}
+        {%- assign width_xs = 6 -%}
+    {%- else -%}
+        {%- assign width_sm = item.width | times: 2 | at_most: 12 -%}
+        {%- assign width_xs = item.width | times: 2 | at_most: 12 -%}
+    {%- endif -%}
     <div class="p-2 grid-item col-md-{{ item.width | at_most: 12 }} col-sm-{{ width_sm }} col-{{ width_xs }}">
         <div class="{% if item.class != null %}{{ item.class }}{% else %}card border-0 shadow-sm bg-white{% endif %}">
             {{ item.content }}
