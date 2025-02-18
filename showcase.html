@@ -2,6 +2,7 @@
 layout: default
 title : Showcase
 navbar_title: Showcase
+container_class: container-fluid  # full width, no padding, change to container-lg for padding
 ---
 
 {% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}

@@ -18,7 +18,7 @@
 </head>
 <body class="bg-light" {{ page.body_attr }}>
     {% include navbar.html %}
-    <div class="container">
+    <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
         {{content}}
     </div>
     {% include footer.html %}
