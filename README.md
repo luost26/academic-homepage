@@ -30,6 +30,7 @@ A GitHub Pages (Jekyll) template for personal academic website. Click [here](htt
 [:star:](https://laiyao1.github.io)
 [🌜](https://tmsultan.github.io)
 [🚀](https://zaxguo.github.io)
+[:gemini:](https://hongyang-du.github.io)
 
 :hugs: Feel free to tell us if you are using this template for your website by creating an issue [here](https://github.com/luost26/academic-homepage/issues/new?assignees=&labels=&projects=&template=user-report.md&title=I+am+using+this+template%21).
 
