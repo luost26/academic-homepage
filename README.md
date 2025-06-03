@@ -40,6 +40,9 @@ A GitHub Pages (Jekyll) template for personal academic website. Click [here](htt
 
 If you run into **any** issues while using this template, or have suggestions for improvements, please don't hesitate to create an issue [here](https://github.com/luost26/academic-homepage/issues/new).
 
+### FAQs
+- [Need blogging feature?](https://github.com/luost26/academic-homepage/issues/13#issuecomment-2646371324)
+
 
 ## Getting Started
 
