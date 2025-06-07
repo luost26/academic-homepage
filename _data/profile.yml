@@ -1,26 +1,26 @@
-primary_name: "Your Name"
-secondary_name: ""
-navbar_name: "Your Name"
+primary_name: "欣渝"
+secondary_name: "宋"
+navbar_name: "宋欣渝"
 
-positions:
-- logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
-  name: Position 1 with logo
-- name: Position 2 without logo
+#positions:
+#- logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
+ # name: Position 1 with logo
+#- name: Position 2 without logo
 
 
-email: "your@email.com"
+email: "18405734668@163.com"
 # cv_link: link-to-your-cv-file
-gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
-github: your_github_id
-twitter: your_twitter_id  # Do not include the '@' symbol
+#gscholar: xFmQpf4AAAAJ  # This is an example, replace it with your own Google Scholar ID
+#github: your_github_id
+#twitter: your_twitter_id  # Do not include the '@' symbol
 # wechat_qrcode: /assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
 # linkedin: your-linked-in-id
 # orcid: 0000-0000-0000-0000
 
-short_bio_text_justify: false
-short_bio: >-
+#short_bio_text_justify: false
+short_bio: >-我是一个阳光开朗的人，喜欢旅游！喜欢探索世界不同的板块！努力成为一名合格的会计法师！
   <p>
     A <a href="https://en.wikipedia.org/wiki/Bicolor_cat" target="_blank">bicolor cat</a> is a cat with white fur combined with fur of some other colour, for example solid black, tabby, or colourpointed.
   </p>
@@ -30,21 +30,21 @@ short_bio: >-
     as well as being common in domestic longhair and domestic shorthair cats.
   </p>
 
-portrait_url: /assets/images/photos/portrait.jpg
+portrait_url: D:\myself\Sunny❤\证件照.jpg
 portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+  拍摄于2024年8月.
 
 education:
-- name: Massachusetts Institute of Technology
-  logo: /assets/images/badges/MIT_Social_circle.png
+- name: 嘉兴大学
+  logo: C:\Users\宋欣渝\Desktop\嘉兴大学校徽.png
   position: >- 
-    Department of Electrical Engineering and Computer Science <br/>
-    Ph.D. Student
+    商学院会计241班学生
   date: Sep. 2024 - present
 - name: Peking University
-  logo: /assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+  logo:C:\Users\宋欣渝\Desktop\平湖中学校徽.jpeg
+  position: >-
+    2021级学生
+  date: Sep. 2021 - Jul. 2024
 
 # experience:
 # - name: Peking University
@@ -53,9 +53,19 @@ education:
 #   date: Sep. 2019 - Jul. 2021
 
 awards:
-- name: Award Name 2
+- name: 嘉兴大学2024至2025学年第一学期学习优秀奖学金一等奖
   date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+#- name: Award Name 1 
+#  date: 2021
+#- name: A quick brown fox jumps over the lazy dog and runs away award
+#  date: 2021
+
+favorate:
+- book: 《平凡的世界》🌸
+- food: 花生🥜
+- movie: 《海上钢琴师》🎹
+- comic: 《间谍过家家》⭐
+- music: 《青火》🎤🎧
+- hobby: 旅游
+  C:\Users\宋欣渝\Desktop\旅游照片.jpg
+  D:\Huawei Share\Huawei Share\主持照片.jpg
