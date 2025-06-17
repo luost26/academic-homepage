@@ -28,8 +28,8 @@
     </div>
 </div>
 
-<div class="row no-gutters d-md-none {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray {% if include.first %}rounded-top{% endif %} {% if include.last %}rounded-bottom{% endif %} {% if item.cover %}lazy{% endif %}" data-src="{{ item.cover | relative_url }}">
-    <div class="w-100" style="background-color: rgba(255,255,255,0.9);">
+<div class="row no-gutters d-md-none {% unless include.hide_bottom_border %}border-bottom{% endunless %} border-gray {% if include.first %}rounded-xl-top{% endif %} {% if include.last %}rounded-xl-bottom{% endif %} {% if item.cover %}lazy{% endif %}" data-src="{{ item.cover | relative_url }}">
+    <div class="w-100 {% if include.first %}rounded-xl-top{% endif %} {% if include.last %}rounded-xl-bottom{% endif %}" style="background-color: rgba(255,255,255,0.9);">
         <div class="d-flex align-items-start flex-column py-3 px-4">
             <div class="mb-auto"></div>
             <div>
