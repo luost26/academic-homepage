@@ -12,7 +12,7 @@ container_class: container-xl
 <div class="row grid mb-4">
     <div class="grid-sizer col-1"></div>
     {% for item in group.items %}
-    {% if item.width >= 4 -%}
+    {% if item.width >= 6 -%}
         {%- assign width_sm = 12 -%}
         {%- assign width_xs = 12 -%}
     {%- elsif item.width >= 2 -%}
