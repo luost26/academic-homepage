@@ -4,7 +4,13 @@
 
 {%- for _key in authors -%}
     {%- assign last_char = _key | slice: -1, 1%}
-    {%- if last_char == "*" -%}
+    {%- assign last_2chars = _key | slice: -2, 2%}
+    {%- if last_2chars == "*#" or last_2chars == "#*" -%}
+        {%- assign key = _key | replace: "#*", "" | replace: "*#", "" -%}
+        {%- assign mark = "*<sup>#</sup>" -%}
+        {%- assign has_eq_contrib = true -%}
+        {%- assign has_corresponding = true -%}
+    {%- elsif last_char == "*" -%}
         {%- assign key = _key | split: "*" | first -%}
         {%- assign mark = "*" -%}
         {%- assign has_eq_contrib = true -%}
