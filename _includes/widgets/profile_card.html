@@ -88,6 +88,12 @@
                         </a>
                         {% endif %}
 
+                        {% if site.data.profile.blog %}
+                        <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.blog | relative_url }}">
+                            <i class="fa-solid fa-pen-to-square"></i> Blog
+                        </a>
+                        {% endif %}
+
                         {% if site.data.profile.orcid %}
                         <a class="pr-3 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
                             <i class="fab fa-orcid"></i> ORCID
