@@ -43,8 +43,8 @@ A GitHub Pages (Jekyll) template for personal academic website. Click [here](htt
 If you run into **any** issues while using this template, or have suggestions for improvements, please don't hesitate to create an issue [here](https://github.com/luost26/academic-homepage/issues/new).
 
 ### FAQs
-- [Need blogging feature?](https://github.com/luost26/academic-homepage/issues/13#issuecomment-2646371324)
 
+- [Need blogging feature?](https://github.com/luost26/academic-homepage/issues/13#issuecomment-2646371324)
 
 ## Getting Started
 
@@ -73,3 +73,39 @@ If you run into **any** issues while using this template, or have suggestions fo
 
 3. Navigate to your created website, and follow the instructions displayed on the homepage (if any) to finalize the setup.
 
+## Customization
+
+### Pages Content
+
+To modify the corresponding website content, update the files in the subdirectories `_data`, `_news`, `_publications`, and `_showcase`.
+
+### Pages Favicon
+
+To set a custom Favicon for pages, add the following code to the `<head>` section of `default.html` in the `_layout` folder:
+
+```html
+<!-- Favicon -->
+<link rel="icon" type="image/jpg" sizes="32x32" href="{{ '/assets/images/icon/icon.jpg' | relative_url }}">
+```
+
+Then place the corresponding image in the `assets` directory.
+
+### Contact Information
+
+To add custom contact information (using a personal blog as an example), first add the field in `profile.yml` located in the `_data` folder:
+
+```yaml
+blog: "https://your_blog_website.com"
+```
+
+Then add the corresponding code in `profile_card.html` under the `_includes\widgets` directory:
+
+```html
+{% if site.data.profile.blog %}
+<a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.blog | relative_url }}">
+	<i class="fa-solid fa-pen-to-square"></i> Blog
+</a>
+{% endif %}
+```
+
+Icons can be selected from [Font Awesome](https://fontawesome.com/). The example above uses the icon `<i class="fa-solid fa-pen-to-square"></i>` for "Blog".

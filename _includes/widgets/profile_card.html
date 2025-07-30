@@ -70,6 +70,12 @@
                         </a>
                         {% endif %}
 
+                        {% if site.data.profile.blog %}
+                        <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.blog | relative_url }}">
+                            <i class="fa-solid fa-pen-to-square"></i> Blog
+                        </a>
+                        {% endif %}
+
                         {% if site.data.profile.wechat_qrcode %}
                         <a class="pr-3 no-break" data-toggle="modal" data-target="#modal-wechat">
                             <i class="fab fa-weixin"></i> WeChat
@@ -85,12 +91,6 @@
                         {% if site.data.profile.linkedin %}
                         <a class="pr-3 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
                             <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.blog %}
-                        <a class="pr-3 no-break" target="_blank" href="{{ site.data.profile.blog | relative_url }}">
-                            <i class="fa-solid fa-pen-to-square"></i> Blog
                         </a>
                         {% endif %}
 
