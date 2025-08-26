@@ -46,6 +46,7 @@ If you run into **any** issues while using this template, or have suggestions fo
 
 ### FAQs
 - [Need blogging feature?](https://github.com/luost26/academic-homepage/issues/13#issuecomment-2646371324)
+- [How to show citation count for papers?](https://github.com/luost26/academic-homepage/issues/29#issuecomment-3222496187)
 
 
 ## Getting Started
