@@ -36,5 +36,5 @@ plugins:
 
 collections:
   - publications
-  - news
-  - showcase
+#  - news
+#  - showcase
