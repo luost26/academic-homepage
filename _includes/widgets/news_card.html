@@ -2,9 +2,9 @@
 
 <div class="my-3 bg-white shadow-sm rounded-xl">
     <h6 class="p-3 mb-0 border-bottom border-gray"><i class="fas fa-rss"></i> News</h6>
-    <div class="px-3 pb-1">
+    <div class="px-3 pb-1 small">
         {% for year in news_by_year %}
-        <div class="media py-1 {% if not_first -%}border-top border-gray{%- endif %}">
+        <div class="media py-0 {% if not_first -%}border-top border-gray{%- endif %}">
             {% assign not_first = true %}
             <div class="mr-3 text-muted my-1">{{ year.name }}</div>
             <div class="media-body">
