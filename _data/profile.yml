@@ -3,9 +3,9 @@ secondary_name: ""
 navbar_name: "Your Name"
 
 positions:
-- logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
-  name: Position 1 with logo
-- name: Position 2 without logo
+- name: Title or Position
+- name: Affiliation Name
+  logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
 
 
 email: "your@email.com"
