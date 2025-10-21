@@ -38,6 +38,12 @@ A GitHub Pages (Jekyll) template for personal academic website. Click [here](htt
 
 :hugs: Feel free to tell us if you are using this template for your website by creating an issue [here](https://github.com/luost26/academic-homepage/issues/new?assignees=&labels=&projects=&template=user-report.md&title=I+am+using+this+template%21).
 
+### Acknowledgements
+
+The improvements of this template have been inspired by the customizations and feedbacks from the following users:
+- :star: [onethousandwu.com](https://onethousandwu.com/): increased corner radius [[Repo]](https://github.com/oneThousand1000/oneThousand1000.github.io)
+- :star: [shiwonkim.github.io](https://shiwonkim.github.io/): two-column main page layout [[Repo]](https://github.com/shiwonkim/shiwonkim.github.io)
+
 
 ## Need Help?
 
