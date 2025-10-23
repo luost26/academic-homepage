@@ -10,12 +10,11 @@ navbar_title: Home
     </div>
     <div class="col-lg-9 col-md-8">
 
-        {% include widgets/debug_repo_name.html %}
-
-        {% include widgets/debug_url.html %}
-
         {% include widgets/profile_card_bio_only.html %}
 
+        <!-- Debugging widgets -->
+        {% include widgets/debug_repo_name.html %}
+        {% include widgets/debug_url.html %}
 
         {% if site.data.display.homepage.show_experience %}
             {% include widgets/experience_card.html %}
