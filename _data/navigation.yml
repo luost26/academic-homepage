@@ -1,0 +1,11 @@
+pages:
+# NOTE: `name` field must match the `navbar_title` field in the page's front matter to ensure the correct page is highlighted in the navbar.
+#       For example, the `navbar_title` field in `showcase.html` is "Showcase" and the `name` field here should also be "Showcase"
+- name: Home
+  url: /
+- name: Home (Layout 2)
+  url: /index_layout2
+- name: Publications
+  url: /publications
+- name: Showcase
+  url: /showcase

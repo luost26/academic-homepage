@@ -1,0 +1,121 @@
+<div class="row">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-5">
+                <div class="row">
+                    <div class="col">
+                        {% if site.data.profile.portrait_url %}
+                        <!-- When the screen is wider than md, float the portrait on the right -->
+                        <div class="figure float-right ml-4 mb-4 d-none d-md-block">
+                            <img 
+                                src="{{ site.data.profile.portrait_url | relative_url }}" 
+                                class="figure-img img-fluid img-thumbnail" 
+                                style="height: 200px;"
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                title="{{ site.data.profile.portrait_caption }}">
+                        </div>
+                        {% endif %}
+
+                        <div class="d-flex">
+                            <div class="h1 font-weight-normal">
+                                {{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small>
+                            </div>
+                            {% if site.data.profile.portrait_url %}
+                            <div class="ml-auto d-md-none">
+                                <a target="_blank" href="{{ site.data.profile.portrait_url | relative_url }}">
+                                    <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="height: 48px;" alt="Portrait">
+                                </a>
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="text-profile-position">
+                            {% for position in site.data.profile.positions %}
+                            {% if position.logo -%}
+                            <img src="{{ position.logo | relative_url }}" alt="Logo" class="inline-badge"/>
+                            {%- endif %}
+                            {{ position.name }}<br/>
+                            {% endfor %}
+                        </div>
+                        <div class="text-profile-bio mt-3" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
+                            {{ site.data.profile.short_bio }}
+                        </div>
+                        {% if site.data.profile.cv_link %}
+                            <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
+                        {% endif %}
+                    </div>
+        
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="col">
+                        <a class="pr-3" href="mailto:{{ site.data.profile.email | encode_email }}">
+                            <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
+                        </a>
+
+                        {% if site.data.profile.gscholar %}
+                        {%- if site.data.profile.gscholar contains 'scholar.google' -%}
+                        {%- assign gscholar_url = site.data.profile.gscholar -%}
+                        {%- else -%}
+                        {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
+                        {%- endif -%}
+                        <a class="pr-3 no-break" target="_blank" href="{{ gscholar_url }}">
+                            <i class="fab fa-google-scholar"></i> Google Scholar
+                        </a>
+                        {% endif %}
+                        
+                        {% if site.data.profile.github %}
+                        <a class="pr-3 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        {% endif %}
+
+                        {% if site.data.profile.wechat_qrcode %}
+                        <a class="pr-3 no-break" data-toggle="modal" data-target="#modal-wechat">
+                            <i class="fab fa-weixin"></i> WeChat
+                        </a>
+                        {% endif %}
+
+                        {% if site.data.profile.twitter %}
+                        <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                        {% endif %}
+
+                        {% if site.data.profile.linkedin %}
+                        <a class="pr-3 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        {% endif %}
+
+                        {% if site.data.profile.orcid %}
+                        <a class="pr-3 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
+                            <i class="fab fa-orcid"></i> ORCID
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+
+{% if site.data.profile.wechat_qrcode %}
+<div class="modal fade" id="modal-wechat" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="{{ site.data.profile.wechat_qrcode | relative_url }}" class="img-fluid">
+            </div>
+            {% if site.data.profile.wechat_prompt %}
+            <div class="modal-body p-1">
+                {{ site.data.profile.wechat_prompt }}
+            </div>
+            {% endif %}
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
