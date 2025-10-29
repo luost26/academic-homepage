@@ -1,0 +1,36 @@
+{% comment %}
+Simple Image Grid Widget
+Usage: {% include widgets/image_grid.html images="image1.jpg,image2.jpg,image3.jpg" columns=2 %}
+Parameters:
+- images: Comma-separated list of image paths (relative to /assets/images/)
+- columns: Number of columns (2 or 3, default: 2)
+- class: Additional CSS classes
+- alts: Comma-separated list of alt texts (optional)
+{% endcomment %}
+
+{% assign image_list = include.images | split: ',' %}
+{% assign alt_list = include.alts | split: ',' %}
+{% assign columns = include.columns | default: 2 %}
+{% assign col_class = 'col-md-6' %}
+{% if columns == 3 %}
+    {% assign col_class = 'col-md-4' %}
+{% endif %}
+
+<div class="image-grid {{ include.class }}">
+    <div class="row">
+        {% for image in image_list %}
+            {% assign image_path = image | strip %}
+            {% unless image_path contains '/' %}
+                {% assign image_path = '/assets/images/' | append: image_path %}
+            {% else %}
+                {% assign image_path = '/assets/images/' | append: image_path %}
+            {% endunless %}
+            {% assign alt_text = alt_list[forloop.index0] | default: 'Image' | strip %}
+            <div class="{{ col_class }} mb-3">
+                <img src="{{ image_path | relative_url }}" 
+                     alt="{{ alt_text }}" 
+                     class="img-fluid rounded shadow-sm">
+            </div>
+        {% endfor %}
+    </div>
+</div>

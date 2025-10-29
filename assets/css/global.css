@@ -154,6 +154,59 @@ code:not(.highlighter-rouge code) {
     margin: 1rem 0;
 }
 
+/* Multi-column image layouts */
+.blog-content .row img {
+    margin: 0.5rem 0;
+    transition: transform 0.2s ease-in-out;
+}
+
+.blog-content .row img:hover {
+    transform: scale(1.02);
+}
+
+/* Image gallery styles */
+.blog-content .img-fluid {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-content .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* Responsive image containers */
+.blog-content .col-md-6 img,
+.blog-content .col-md-4 img,
+.blog-content .col-lg-3 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.375rem;
+}
+
+/* Mixed content layouts */
+.blog-content .col-md-8 {
+    padding-right: 1rem;
+}
+
+.blog-content .col-md-4 {
+    padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+    .blog-content .col-md-8,
+    .blog-content .col-md-4 {
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .blog-content .col-md-6 img,
+    .blog-content .col-md-4 img {
+        height: 150px;
+    }
+}
+
 .blog-content table {
     width: 100%;
     margin-bottom: 1rem;

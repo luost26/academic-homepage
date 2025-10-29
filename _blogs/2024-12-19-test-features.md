@@ -77,7 +77,9 @@ $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
 
 ### Using Relative Path Images
 
-![Sample Image](/assets/images/etc/preview.png)
+![Portrait Image]({{ '/assets/images/photos/portrait.jpg' | relative_url }})
+
+![Preview Image]({{ '/assets/images/etc/preview.png' | relative_url }})
 
 ### Using Absolute URL Images
 
@@ -111,16 +113,3 @@ $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
 1. First step
 2. Second step
 3. Third step
-
-## Summary
-
-This blog demonstrates the following features:
-- ✅ Code highlighting (supports multiple languages)
-- ✅ Math formula rendering (LaTeX syntax)
-- ✅ Image insertion (relative/absolute paths)
-- ✅ Tables, blockquotes, lists and other standard Markdown features
-- ✅ Responsive layout
-- ✅ No sidebar design
-- ✅ Footer sticks to bottom of screen
-
-All features should work properly!
