@@ -5,6 +5,208 @@ body {
     padding-top: 5.0rem;
 }
 
+/* Ensure footer sticks to bottom on all pages */
+html, body {
+    height: 100%;
+}
+
+body.d-flex.flex-column.min-vh-100 {
+    min-height: 100vh;
+}
+
+body.d-flex.flex-column.h-100 {
+    height: 100%;
+}
+
+/* Footer styling */
+.footer {
+    margin-top: auto;
+}
+
+/* Code highlighting styles - Rouge syntax highlighter */
+.highlighter-rouge {
+    background-color: #f8f9fa;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    overflow-x: auto;
+    border: none;
+}
+
+.highlighter-rouge .highlight {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.highlighter-rouge pre {
+    margin: 0;
+    background: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.highlighter-rouge code {
+    background: transparent;
+    padding: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border: none;
+    color: inherit;
+}
+
+/* Inline code */
+code:not(.highlighter-rouge code) {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 0.25rem;
+    padding: 0.125rem 0.25rem;
+    font-size: 0.875em;
+    color: #e83e8c;
+}
+
+/* Legacy highlight class support */
+.highlight {
+    background-color: #f8f9fa;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    overflow-x: auto;
+    border: none;
+}
+
+.highlight pre {
+    margin: 0;
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+
+.highlight code {
+    background: transparent;
+    padding: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border: none;
+}
+
+/* Blog content styling */
+.blog-content {
+    line-height: 1.7;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.blog-content h1 {
+    font-size: 2rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5rem;
+}
+
+.blog-content h2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 0.25rem;
+}
+
+.blog-content h3 {
+    font-size: 1.25rem;
+}
+
+.blog-content p {
+    margin-bottom: 1rem;
+}
+
+.blog-content ul,
+.blog-content ol {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.blog-content li {
+    margin-bottom: 0.5rem;
+}
+
+.blog-content blockquote {
+    border-left: 4px solid #007bff;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #6c757d;
+}
+
+.blog-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin: 1rem 0;
+}
+
+.blog-content table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+}
+
+.blog-content table th,
+.blog-content table td {
+    padding: 0.75rem;
+    border: 1px solid #dee2e6;
+}
+
+.blog-content table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+/* Math formula styling */
+.katex-display {
+    margin: 1.5rem 0;
+    text-align: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.katex {
+    font-size: 1.1em;
+}
+
+/* Ensure math formulas are properly displayed */
+.katex-display .katex {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* Fix for math formula containers */
+.katex-display {
+    display: block;
+    width: 100%;
+}
+
+/* Ensure proper spacing around math formulas */
+.blog-content .katex-display {
+    margin: 2rem 0;
+    padding: 1rem 0;
+}
+
+/* Inline math styling */
+.katex-inline {
+    display: inline;
+    margin: 0 0.2em;
+}
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 700;

@@ -3,9 +3,9 @@ pages:
 #       For example, the `navbar_title` field in `showcase.html` is "Showcase" and the `name` field here should also be "Showcase"
 - name: Home
   url: /
-- name: Home (Layout 2)
-  url: /index_layout2
 - name: Publications
   url: /publications
+- name: Blogs
+  url: /blogs
 - name: Showcase
   url: /showcase
