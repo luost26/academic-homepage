@@ -17,6 +17,16 @@ baseurl: "/academic-homepage" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
 plugins:
   - jekyll-email-protect
 
