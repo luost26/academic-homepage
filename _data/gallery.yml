@@ -1,0 +1,23 @@
+default:
+  - src: "/assets/images/etc/preview.png"
+    alt: "Preview Image"
+  - src: "/assets/images/etc/cat1.jpg"
+    alt: "Cat 1"
+  - src: "/assets/images/etc/cat2.jpg"
+    alt: "Cat 2"
+  - src: "/assets/images/photos/portrait.jpg"
+    alt: "Portrait"
+
+two_column:
+  - src: "/assets/images/etc/cat1.jpg"
+    alt: "Cat 1"
+  - src: "/assets/images/etc/cat2.jpg"
+    alt: "Cat 2"
+
+three_column:
+  - src: "/assets/images/etc/preview.png"
+    alt: "Preview"
+  - src: "/assets/images/etc/cat1.jpg"
+    alt: "Cat 1"
+  - src: "/assets/images/etc/cat2.jpg"
+    alt: "Cat 2"
