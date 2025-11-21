@@ -1,0 +1,37 @@
+{% comment %}
+Image Row Widget - Simple two or three column image layout
+Usage: 
+  {% include widgets/image_row.html images=my_images %}
+  {% include widgets/image_row.html images=my_images columns=3 %}
+  {% include widgets/image_row.html images=my_images columns=2 class="my-4" %}
+
+Parameters:
+- images: Array of image objects (required)
+- columns: Number of columns (2 or 3, default: 2)
+- class: Additional CSS classes
+{% endcomment %}
+
+{% assign columns = include.columns | default: 2 %}
+{% assign col_class = 'col-md-6' %}
+{% if columns == 3 %}
+    {% assign col_class = 'col-md-4' %}
+{% endif %}
+
+{% if include.images %}
+    {% assign image_list = include.images %}
+    <div class="image-row {{ include.class }}">
+        <div class="row">
+            {% for image in image_list limit:columns %}
+                <div class="{{ col_class }} mb-3">
+                    <img src="{{ image.src | relative_url }}" 
+                         alt="{{ image.alt | default: 'Image' }}" 
+                         class="img-fluid rounded shadow-sm">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% else %}
+    <div class="alert alert-warning">
+        <strong>Warning:</strong> No images provided to image_row component. Please provide an images parameter.
+    </div>
+{% endif %}
