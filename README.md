@@ -31,9 +31,9 @@ A GitHub Pages (Jekyll) template for personal academic website. Click [here](htt
 [🌜](https://tmsultan.github.io)
 [🚀](https://zaxguo.github.io)
 [:gemini:](https://hongyang-du.github.io)
-[🇻‍🇳](https://thuanz123.github.io)
+[:star:](https://thuanz123.github.io)
 [🧬](https://gdalba.github.io/)
-[🇭🇰](https://yhhan.com/)
+[:star:](https://yhhan.com/)
 [🌔](https://chen-huaneng.github.io/academic)
 [🌏](https://lin-shengxiang.github.io/)
 
