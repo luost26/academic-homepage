@@ -12,7 +12,8 @@
                                 class="figure-img img-fluid" 
                                 data-toggle="tooltip" 
                                 data-placement="top" 
-                                title="{{ site.data.profile.portrait_caption }}">
+                                title="{{ site.data.profile.portrait_caption }}"
+                                alt="Portrait">
                         </div>
                         <div class="mb-3 d-md-none text-center">
                             <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="max-width: 50%;" alt="Portrait">
@@ -50,13 +51,13 @@
                         {%- else -%}
                         {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
                         {%- endif -%}
-                        <a class="px-1 no-break" target="_blank" href="{{ gscholar_url }}">
+                        <a class="px-1 no-break" target="_blank" href="{{ gscholar_url }}" rel="noopener noreferrer">
                             <i class="fab fa-google-scholar"></i>
                         </a>
                         {% endif %}
                         
                         {% if site.data.profile.github %}
-                        <a class="px-1 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
+                        <a class="px-1 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}" rel="noopener noreferrer">
                             <i class="fab fa-github"></i>
                         </a>
                         {% endif %}
@@ -68,19 +69,19 @@
                         {% endif %}
 
                         {% if site.data.profile.twitter %}
-                        <a class="px-1 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
+                        <a class="px-1 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}" rel="noopener noreferrer">
                             <i class="fab fa-twitter"></i>
                         </a>
                         {% endif %}
 
                         {% if site.data.profile.linkedin %}
-                        <a class="px-1 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
+                        <a class="px-1 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" rel="noopener noreferrer">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         {% endif %}
 
                         {% if site.data.profile.orcid %}
-                        <a class="px-1 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
+                        <a class="px-1 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}" rel="noopener noreferrer">
                             <i class="fab fa-orcid"></i>
                         </a>
                         {% endif %}
@@ -97,7 +98,7 @@
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-body p-0">
-                <img src="{{ site.data.profile.wechat_qrcode | relative_url }}" class="img-fluid">
+                <img src="{{ site.data.profile.wechat_qrcode | relative_url }}" class="img-fluid" alt="WeChat QR Code">
             </div>
             {% if site.data.profile.wechat_prompt %}
             <div class="modal-body p-1">

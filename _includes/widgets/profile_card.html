@@ -13,7 +13,8 @@
                                 style="height: 200px;"
                                 data-toggle="tooltip" 
                                 data-placement="top" 
-                                title="{{ site.data.profile.portrait_caption }}">
+                                title="{{ site.data.profile.portrait_caption }}"
+                                alt="Portrait">
                         </div>
                         {% endif %}
 
@@ -23,7 +24,7 @@
                             </div>
                             {% if site.data.profile.portrait_url %}
                             <div class="ml-auto d-md-none">
-                                <a target="_blank" href="{{ site.data.profile.portrait_url | relative_url }}">
+                                <a target="_blank" href="{{ site.data.profile.portrait_url | relative_url }}" rel="noopener noreferrer">
                                     <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="height: 48px;" alt="Portrait">
                                 </a>
                             </div>
@@ -41,7 +42,7 @@
                             {{ site.data.profile.short_bio }}
                         </div>
                         {% if site.data.profile.cv_link %}
-                            <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
+                            <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
                         {% endif %}
                     </div>
         
@@ -59,13 +60,13 @@
                         {%- else -%}
                         {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
                         {%- endif -%}
-                        <a class="pr-3 no-break" target="_blank" href="{{ gscholar_url }}">
+                        <a class="pr-3 no-break" target="_blank" href="{{ gscholar_url }}" rel="noopener noreferrer">
                             <i class="fab fa-google-scholar"></i> Google Scholar
                         </a>
                         {% endif %}
                         
                         {% if site.data.profile.github %}
-                        <a class="pr-3 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
+                        <a class="pr-3 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}" rel="noopener noreferrer">
                             <i class="fab fa-github"></i> GitHub
                         </a>
                         {% endif %}
@@ -77,19 +78,19 @@
                         {% endif %}
 
                         {% if site.data.profile.twitter %}
-                        <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
+                        <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}" rel="noopener noreferrer">
                             <i class="fab fa-twitter"></i> Twitter
                         </a>
                         {% endif %}
 
                         {% if site.data.profile.linkedin %}
-                        <a class="pr-3 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
+                        <a class="pr-3 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" rel="noopener noreferrer">
                             <i class="fab fa-linkedin"></i> LinkedIn
                         </a>
                         {% endif %}
 
                         {% if site.data.profile.orcid %}
-                        <a class="pr-3 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
+                        <a class="pr-3 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}" rel="noopener noreferrer">
                             <i class="fab fa-orcid"></i> ORCID
                         </a>
                         {% endif %}
@@ -105,7 +106,7 @@
     <div class="modal-dialog modal-sm">
         <div class="modal-content">
             <div class="modal-body p-0">
-                <img src="{{ site.data.profile.wechat_qrcode | relative_url }}" class="img-fluid">
+                <img src="{{ site.data.profile.wechat_qrcode | relative_url }}" class="img-fluid" alt="WeChat QR Code">
             </div>
             {% if site.data.profile.wechat_prompt %}
             <div class="modal-body p-1">

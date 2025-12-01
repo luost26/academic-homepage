@@ -13,7 +13,7 @@ semanticScholarIds.forEach(id => {
     const cacheKey = `semanticScholarCitationCount:${id}`;
     const cachedData = localStorage.getItem(cacheKey);
     if (cachedData) {
-        const { _, timestamp } = JSON.parse(cachedData);
+        const { timestamp } = JSON.parse(cachedData);
         // If cached data is older than 1 hour, consider it uncached
         if (Date.now() - timestamp > 1 * 60 * 60 * 1000) {
             uncachedSemanticScholarIds.push(id);
