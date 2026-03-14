@@ -1,0 +1,40 @@
+{% assign item = include.item %}
+{% assign hide_bottom_border = include.hide_bottom_border %}
+{% assign first = include.first %}
+{% assign last = include.last %}
+
+<div class="border-bottom border-gray p-3 {% if hide_bottom_border %}border-0{% endif %}">
+    <div class="row">
+        <div class="col-12">
+            <h5 class="mb-2">
+                <a href="{{ item.url | relative_url }}" class="text-dark text-decoration-none">
+                    {{ item.title }}
+                </a>
+            </h5>
+            <div class="text-muted small mb-2">
+                <i class="fas fa-calendar-alt"></i> {{ item.date | date: "%B %d, %Y" }}
+                {% if item.tags %}
+                    <span class="ml-3">
+                        <i class="fas fa-tags"></i>
+                        {% for tag in item.tags %}
+                            <span class="badge badge-light">{{ tag }}</span>
+                        {% endfor %}
+                    </span>
+                {% endif %}
+            </div>
+            <div class="text-muted">
+                {% if item.excerpt %}
+                    {{ item.excerpt | strip_html | truncate: 200 }}
+                {% else %}
+                    {{ item.content | strip_html | truncate: 200 }}
+                {% endif %}
+            </div>
+            <div class="mt-2">
+                <a href="{{ item.url | relative_url }}" class="btn btn-outline-primary btn-sm">
+                    Read More <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
