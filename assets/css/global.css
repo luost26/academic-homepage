@@ -1,0 +1,96 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+
+/* 1. 全局排版 (Typography is King) */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+    line-height: 1.75 !important;
+    color: #333333 !important;
+    background-color: #FFFFFF !important;
+    padding-top: 5.0rem;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Inter', sans-serif !important;
+    color: #111111 !important;
+    font-weight: 700 !important;
+}
+
+p, div, li {
+    color: #333333;
+}
+
+.text-muted, .small, em, i {
+    color: #666666 !important;
+}
+
+/* 2. 极简导航栏 (Clean Header) */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid #EAEAEA !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+}
+
+.navbar-brand, .nav-link {
+    color: #333333 !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #111111 !important;
+    font-weight: 700 !important;
+}
+
+.navbar-dark .navbar-toggler {
+    color: #333333 !important;
+    border-color: #EAEAEA !important;
+}
+
+/* 3. 去除卡片，回归内容 (Remove Cards) */
+.card, .rounded-xl, .shadow-sm, .bg-white {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.card-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* 增加间距：大幅增加板块之间的 margin-bottom，利用留白区分内容 */
+section, .row, .mt-3, .my-3 {
+    margin-bottom: 80px !important;
+}
+
+/* 辅助样式：链接与按钮样式微调以匹配极简风格 */
+a {
+    color: #E82127 !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background: rgba(232, 33, 39, 0.05) !important;
+    border-radius: 4px;
+}
+
+/* 头像基础样式调整 */
+.figure-img, .rounded-circle {
+    border-radius: 50% !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05) !important;
+}
+
+/* 针对 Bootstrap 的一些背景色强制清除 */
+.bg-light {
+    background-color: #FFFFFF !important;
+}
+
+hr {
+    border-top: 1px solid #F0F0F0 !important;
+    margin: 40px 0 !important;
+}

@@ -1,0 +1,60 @@
+{%- assign authors = include.authors -%}
+{%- assign has_eq_contrib = false -%}
+{%- assign has_corresponding = false -%}
+
+{%- for _key in authors -%}
+    {%- assign last_char = _key | slice: -1, 1%}
+    {%- assign last_2chars = _key | slice: -2, 2%}
+    {%- if last_2chars == "*#" or last_2chars == "#*" -%}
+        {%- assign key = _key | replace: "#*", "" | replace: "*#", "" -%}
+        {%- assign mark = "*<sup>#</sup>" -%}
+        {%- assign has_eq_contrib = true -%}
+        {%- assign has_corresponding = true -%}
+    {%- elsif last_char == "*" -%}
+        {%- assign key = _key | split: "*" | first -%}
+        {%- assign mark = "*" -%}
+        {%- assign has_eq_contrib = true -%}
+    {%- elsif last_char == "#" -%}
+        {%- assign key = _key | split: "#" | first -%}
+        {%- assign mark = '<sup>#</sup>' -%}
+        {%- assign has_corresponding = true -%}
+    {%- else -%}
+        {%- assign key = _key -%}
+        {%- assign mark = "" -%}
+    {%- endif -%}
+
+    {%- assign info = site.data.authors[key] -%}
+
+    {%- if info['name'] -%}
+        {%- assign name = info['name'] -%}
+    {%- else -%}
+        {%- assign name = key -%}
+    {%- endif -%}
+
+    {%- if info['bold'] == true -%}
+        {%- assign display_name = name | append: mark | prepend: "<strong>" | append: "</strong>" -%}
+    {%- else -%}
+        {%- assign display_name = name | append: mark -%}
+    {%- endif -%}
+    
+    {%- if info['url'] -%}
+        <a class="text-body" target="_blank" href="{{ info['url'] }}">{{ display_name }}</a>{%- if forloop.index < authors.size -%}, {% endif -%}
+    {%- else -%}
+        <span class="text-body">
+            {{ display_name }}{%- if forloop.index < authors.size -%}, {% endif -%}
+        </span>
+    {%- endif -%}
+
+{%- endfor -%}
+
+{%- if has_eq_contrib or has_corresponding %}
+<mark>(
+    {%- if has_eq_contrib -%}
+        * <i> equal contribution</i>
+    {%- endif -%}
+    {%- if has_corresponding -%}
+        {%- if has_eq_contrib -%}, {% endif -%}
+        <sup>#</sup> <i> corresponding author</i>
+    {%- endif -%}
+)</mark>
+{%- endif -%}

@@ -1,0 +1,75 @@
+<div class="row mt-3">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <div class="row" data-masonry='{"percentPosition": true }'>
+                    {% if site.data.profile.education %}
+                    <div class="col-lg-6">
+                        <div class="mx-2 my-1">
+                            <h6>Education</h6>
+                            <ul class="list-unstyled mb-1">
+                                {% for item in site.data.profile.education %}
+                                <li class="media mb-1">
+                                    <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
+                                    <div class="media-body">
+                                        <div>{{ item.name }}</div>
+                                        <div class="small">{{ item.dept }}</div>
+                                        <div class="small d-flex">
+                                            <div>{{ item.position }}</div>
+                                            <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if site.data.profile.experience %}
+                    <div class="col-lg-6">
+                        <div class="mx-2 my-1">
+                            <h6>Experience</h6>
+                            <ul class="list-unstyled mb-1">
+                                {% for item in site.data.profile.experience %}
+                                <li class="media mb-1">
+                                    <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
+                                    <div class="media-body">
+                                        <div>{{ item.name }}</div>
+                                        <div class="small">{{ item.dept }}</div>
+                                        <div class="small d-flex">
+                                            <div>{{ item.position }}</div>
+                                            <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    {% if site.data.profile.awards %}
+                    <div class="col-lg-6">
+                        <div class="mx-2 my-1">
+                            <h6>Honors & Awards</h6>
+                            <ul class="list small pl-3 mb-1">
+                                {% for item in site.data.profile.awards %}
+                                <li>
+                                    <div class="d-flex">
+                                        <div>{{ item.name }}</div>
+                                        <div class="ml-auto mt-auto no-break"><em>{{ item.date }}</em></div>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endif %}
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

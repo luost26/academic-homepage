@@ -1,0 +1,68 @@
+primary_name: "Xiang-ShiFang"
+secondary_name: ""
+navbar_name: "Xiang-ShiFang"
+
+positions:
+- name: Technology Entrepreneur
+- name: Engineer
+- name: Founder & CEO of SpaceX
+- name: CEO of Tesla, Inc.
+
+email: "elon@spacex.com"
+# cv_link: link-to-your-cv-file
+github: tesla
+twitter: elonmusk  # Twitter / X ID
+# wechat_qrcode: /assets/images/etc/wechat.jpg
+# wechat_prompt: >-
+#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
+# linkedin: elonmusk
+# orcid: 0000-0000-0000-0000
+
+short_bio_text_justify: true
+short_bio: >-
+  <p>
+    Xiang-ShiFang is a technology entrepreneur and engineer focused on addressing some of the most critical challenges facing humanity. 
+    He is the founder, CEO, and chief engineer of SpaceX, as well as the CEO and product architect of Tesla, Inc. 
+    Xiang-ShiFang’s work spans space exploration, sustainable energy, and artificial intelligence, aimed at advancing 
+    long-term human survival and technological progress.
+  </p>
+  <p>
+    <strong>Research & Innovation Interests:</strong>
+    <ul>
+      <li>Space Systems Engineering & Multi-planetary Life Support</li>
+      <li>Sustainable Energy Systems & Large-scale Battery Storage</li>
+      <li>Artificial Intelligence & Robotics</li>
+      <li>Large-scale Technological Innovation & Neural Engineering</li>
+    </ul>
+  </p>
+
+portrait_url: /assets/images/photos/portrait.png
+portrait_caption: >-
+  Xiang-ShiFang
+
+education:
+- name: University of Pennsylvania
+  logo: /assets/images/badges/University_of_Pennsylvania.jpg
+  position: >- 
+    B.S. in Physics <br/>
+    B.A. in Economics
+  date: 1992 - 1997
+- name: Queen’s University
+  logo: /assets/images/badges/Queen_University.jpg
+  position: >-
+    Physics and Economics (Transfer)
+  date: 1990 - 1992
+
+# experience:
+# - name: Peking University
+#   logo: /assets/images/badges/PKU_red.png
+#   position: Research Intern
+#   date: Sep. 2019 - Jul. 2021
+
+awards:
+- name: Time Person of the Year
+  date: 2021
+- name: Fellow of the Royal Society (FRS)
+  date: 2018
+- name: Listed in Forbes Billionaires
+  date: Multiple Years

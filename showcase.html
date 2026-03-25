@@ -1,0 +1,32 @@
+---
+layout: default
+title : Showcase
+navbar_title: Showcase
+container_class: container-xl
+---
+
+{% assign cards_by_group = site.showcase | sort: "date" | reverse | where: "show", true | group_by_exp: "item", "item.group" %}
+
+{% for group in cards_by_group %}
+<h1>{{ group.name }}</h1>
+<div class="row grid mb-4">
+    <div class="grid-sizer col-1"></div>
+    {% for item in group.items %}
+    {% if item.width >= 6 -%}
+        {%- assign width_sm = 12 -%}
+        {%- assign width_xs = 12 -%}
+    {%- elsif item.width >= 2 -%}
+        {%- assign width_sm = 6 -%}
+        {%- assign width_xs = 6 -%}
+    {%- else -%}
+        {%- assign width_sm = item.width | times: 2 | at_most: 12 -%}
+        {%- assign width_xs = item.width | times: 2 | at_most: 12 -%}
+    {%- endif -%}
+    <div class="p-2 grid-item col-md-{{ item.width | at_most: 12 }} col-sm-{{ width_sm }} col-{{ width_xs }}">
+        <div class="{% if item.class != null %}{{ item.class }}{% else %}card border-0 shadow-sm bg-white{% endif %}">
+            {{ item.content }}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
