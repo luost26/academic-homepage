@@ -1,0 +1,27 @@
+{% comment %}
+Image Gallery Widget
+Usage: {% include widgets/image_gallery.html images=images_array columns=2 %}
+Parameters:
+- images: Array of image objects with 'src' and 'alt' properties
+- columns: Number of columns (2 or 3, default: 2)
+- class: Additional CSS classes
+{% endcomment %}
+
+{% assign image_count = include.images.size %}
+{% assign columns = include.columns | default: 2 %}
+{% assign col_class = 'col-md-6' %}
+{% if columns == 3 %}
+    {% assign col_class = 'col-md-4' %}
+{% endif %}
+
+<div class="image-gallery {{ include.class }}">
+    <div class="row">
+        {% for image in include.images %}
+            <div class="{{ col_class }} mb-3">
+                <img src="{{ image.src | relative_url }}" 
+                     alt="{{ image.alt | default: 'Image' }}" 
+                     class="img-fluid rounded shadow-sm">
+            </div>
+        {% endfor %}
+    </div>
+</div>
