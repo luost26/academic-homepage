@@ -3,8 +3,8 @@ secondary_name: ""
 navbar_name: "Your Name"
 
 positions:
-- name: Title or Position
-- name: Affiliation Name
+- name: Assistant Professor
+- name: Economics Department - University of Verona
   logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
 
 
