@@ -36,7 +36,7 @@ A GitHub Pages (Jekyll) template for personal academic website. Click [here](htt
 [:star:](https://yhhan.com/)
 [🌔](https://chen-huaneng.github.io/academic)
 [:star:](https://jwklee.github.io/)
-[😺](https://onethousandwu.com/)
+[😼](https://onethousandwu.com/)
 [🔬](https://kwen-chen.github.io/)
 [🧑‍🔬](https://shengxiang-lin.github.io/)
 
@@ -45,7 +45,7 @@ A GitHub Pages (Jekyll) template for personal academic website. Click [here](htt
 ### Acknowledgements
 
 The improvements of this template have been inspired by the customizations and feedbacks from the following users:
-- 😺 [onethousandwu.com](https://onethousandwu.com/): increased corner radius [[Repo]](https://github.com/oneThousand1000/oneThousand1000.github.io)
+- 😼 [onethousandwu.com](https://onethousandwu.com/): increased corner radius [[Repo]](https://github.com/oneThousand1000/oneThousand1000.github.io)
 - :star: [shiwonkim.github.io](https://shiwonkim.github.io/): two-column main page layout [[Repo]](https://github.com/shiwonkim/shiwonkim.github.io)
 - :star: [yqxie99.github.io](https://yqxie99.github.io/): blog feature [[Repo]](https://github.com/YQXie99/YQXie99.github.io/tree/feat/add_blog_page)
 - :star: [kwen-chen.github.io](https://kwen-chen.github.io/): blog feature [[Repo]](https://github.com/Kwen-Chen/Kwen-Chen.github.io)
