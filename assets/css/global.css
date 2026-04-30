@@ -43,7 +43,9 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar {
-    opacity: 0.95;
+    background-color: rgba(255, 255, 255, 0.6) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 }
 
 .inline-badge {
