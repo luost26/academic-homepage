@@ -45,13 +45,12 @@ if (uncachedSemanticScholarIds.length > 0) {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            ids: Array.from(semanticScholarIds)
+            ids: uncachedSemanticScholarIds
         })
     }).then(response => {
         return response.json();
     }).then(data => {
         data.forEach(paper => {
-            console.log(paper);
             // Cache citation count data
             const cacheKey = `semanticScholarCitationCount:${paper.paperId}`;
             const cacheData = {
