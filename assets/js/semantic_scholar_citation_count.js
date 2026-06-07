@@ -51,6 +51,7 @@ if (uncachedSemanticScholarIds.length > 0) {
         return response.json();
     }).then(data => {
         data.forEach(paper => {
+            console.log(paper);
             // Cache citation count data
             const cacheKey = `semanticScholarCitationCount:${paper.paperId}`;
             const cacheData = {
