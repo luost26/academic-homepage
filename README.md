@@ -33,6 +33,7 @@ A GitHub Pages (Jekyll) template for personal academic website. Click [here](htt
 [:gemini:](https://hongyang-du.github.io)
 [:star:](https://thuanz123.github.io)
 [🧬](https://gdalba.github.io/)
+[:star:](https://yqxie99.github.io/)
 [:star:](https://yhhan.com/)
 [🌔](https://chen-huaneng.github.io/academic)
 [:star:](https://jwklee.github.io/)
