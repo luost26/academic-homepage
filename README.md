@@ -10,6 +10,14 @@
 
 A GitHub Pages (Jekyll) template for personal academic website. Click [here](https://luost26.github.io/academic-homepage/) to see the demo.
 
+## Variants
+
+Explore alternative visual styles in their own repositories.
+
+| Variant | Style | Preview | Links |
+| --- | --- | --- | --- |
+| Frutiger Aero | Vista-inspired frosted glass, glossy icons, and nature imagery. | <img src="assets/images/variants/frutiger-aero.jpg" alt="Frutiger Aero homepage screenshot" width="320"> | [Repository](https://github.com/luost26/academic-homepage-frutiger-aero) · [Live demo](https://luost26.github.io/academic-homepage-frutiger-aero/) |
+
 ## User Community
 
 [🏡](https://luost.me/)
