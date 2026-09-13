@@ -17,6 +17,7 @@ Explore alternative visual styles in their own repositories.
 | Variant | Style | Preview | Links |
 | --- | --- | --- | --- |
 | Frutiger Aero | Vista-inspired frosted glass, glossy icons, and nature imagery. | <img src="assets/images/variants/frutiger-aero.jpg" alt="Frutiger Aero homepage screenshot" width="320"> | [Repository](https://github.com/luost26/academic-homepage-frutiger-aero) · [Live demo](https://luost26.github.io/academic-homepage-frutiger-aero/) |
+| Nostalgia 1990s | Windows 95/98-style silver bevels, native classic icons, and pixel-grid typography. | <img src="assets/images/variants/nostalgia-1990s.jpg" alt="Nostalgia 1990s homepage screenshot" width="320"> | [Repository](https://github.com/luost26/academic-homepage-nostalgia-1990s) · [Live demo](https://luost26.github.io/academic-homepage-nostalgia-1990s/) |
 
 ## User Community
 
