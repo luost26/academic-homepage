@@ -12,7 +12,7 @@
 </div>
 
 <script>
-striped_pathname = location.pathname.replace(/\/+$/, "");
+striped_pathname = location.pathname.replace(/\/+$/, "").replace(/\/index\.html$/, "").replace(/\/+$/, "");
 document.querySelectorAll(".repo-name-text").forEach(function(element){
     element.textContent = striped_pathname.replace("/", "");
 });

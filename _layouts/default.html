@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ '/assets/css/global.css' | relative_url }}">
 </head>
-<body class="bg-light" {{ page.body_attr }}>
+<body class="bg-light d-flex flex-column min-vh-100" {{ page.body_attr }}>
     {% include navbar.html %}
-    <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
+    <main class="flex-grow-1 flex-shrink-0 {% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
         {{content}}
-    </div>
+    </main>
     {% include footer.html %}
 
     <!-- Scripts -->

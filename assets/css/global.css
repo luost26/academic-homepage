@@ -91,3 +91,42 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+    padding: 0;
+    background: transparent;
+    border: 0;
+}
+
+.carousel-indicators button {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    padding: 0;
+    margin: 0 3px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+}
+
+.carousel-indicators button.active {
+    opacity: 1;
+}
+
+.carousel button:focus-visible {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel-indicators button {
+        transition: none;
+    }
+}

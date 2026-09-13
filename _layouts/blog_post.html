@@ -22,10 +22,10 @@
 <body class="bg-light d-flex flex-column min-vh-100" {{ page.body_attr }}>
     {% include navbar.html active_page="Blog" %}
 
-    <main class="flex-grow-1">
+    <main class="flex-grow-1 flex-shrink-0">
         <div class="blog-layout-wrapper">
             <div class="blog-main">
-                <article class="bg-white rounded-xl p-4 mb-4" style="border: 1px solid #f0f0f0;">
+                <article class="bg-white shadow-sm rounded-xl p-4 mb-4">
                     <header class="mb-4">
                         <h1 class="display-4 mb-3">{{ page.title }}</h1>
                         <div class="text-muted mb-3">
