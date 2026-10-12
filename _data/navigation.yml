@@ -5,7 +5,5 @@ pages:
   url: /
 - name: Publications
   url: /publications
-- name: EgoSim
-  url: /EgoSim/
 - name: Life
   url: /showcase

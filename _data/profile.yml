@@ -4,6 +4,7 @@ navbar_name: "Ningze Zhong"
 
 positions:
  #logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
+- name: 'Co-founder of <a href="https://runtime.si/" target="_blank"><b>Runtime</b></a>, backed by Y Combinator, Pareto Holdings and NVIDIA Inception Program.'
 - name: I was born in Guangdong-Hong Kong-Macau Greater Bay Area in China and I can speek Mandarin, Cantonese, English and Hakka. I mainly focus on `Control and Optimization`, `Reinforcement Learning`, `Computer Vision` and so on. I serve as a reviewer of CVPR 2026, ECCV 2026 and so on.
 - name: My philosophy is Curiosity-led research and value-led start-ups： To truly maximize social value, scientific research should avoid the utilitarianism of business. It should boldly explore uncharted territories, not just follow trends or rush to publish. Likewise, entrepreneurship should focus on creating real value for society—not on copying others or joining the race to sameness.
 email: "lemonzhong001@163.com"
@@ -42,7 +43,13 @@ education:
   date: Sep. 2021 - Jul. 2025
 
 experience:
-  
+
+- name: Runtime
+  dept: '<a href="https://runtime.si/" target="_blank">runtime.si</a>'
+  logo: /assets/images/badges/runtime.svg
+  position: Co-founder (Backed by Y Combinator, Pareto Holdings and NVIDIA Inception Program)
+  date: Present
+
 - name: Shenzhen Innox Academy
   logo: /assets/images/badges/innox.jpg
   position: VC Winter Camp Member (Headed by DJI Founder, Prof.Zexiang Li)
