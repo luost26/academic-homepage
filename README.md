@@ -50,7 +50,6 @@ Explore alternative visual styles in their own repositories.
 [🧑‍🔬](https://shengxiang-lin.github.io/)
 [🗣️](https://henry-h22.github.io/)
 [🍠](https://xingyuliuxyl.com/)
-
 [:star:](https://melanthera-biflora.github.io/)
 
 :hugs: Feel free to tell us if you are using this template for your website by creating an issue [here](https://github.com/luost26/academic-homepage/issues/new?assignees=&labels=&projects=&template=user-report.md&title=I+am+using+this+template%21).
